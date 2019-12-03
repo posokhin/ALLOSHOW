@@ -1,0 +1,46 @@
+.pagination{
+    margin-bottom: 50px;
+    &__list{
+        border-bottom: 1px solid rgba(0,0,0,.05);
+        padding-bottom: 15px;
+    }
+    &__item{
+        margin-right: 24px;
+        &-next, &-prev{
+            i{
+                margin-bottom: 1px;
+            }
+        }
+        &.active{
+            a{
+                color: #c80a09;    
+                position: relative;
+                &::after{
+                    position: absolute;
+                    bottom: -15px;
+                    content: "";
+                    display: block;
+                    width: 18px;
+                    height: 3px;
+                    background: #c80a09;
+                    -webkit-box-shadow: 0 2px 11px rgba(200,10,9,.32);
+                    box-shadow: 0 2px 11px rgba(200,10,9,.32);
+                }
+            }
+        }
+        &.disabled{
+            pointer-events: none;
+            i{
+                &::before, &::after{
+                    background: #cbcbcb;
+                }
+            }
+        }
+        a{
+            color: #000000;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.34px;
+        }
+    }
+}

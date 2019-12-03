@@ -1,0 +1,81 @@
+.filter{
+    &__section{
+        position: relative;
+        &-wrap{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 626px;
+            box-shadow: 5px 12px 24px rgba(0, 0, 0, 0.21);
+            border-radius: 4px;
+            background-color: #ffffff;    
+            z-index: 1;
+            display: none;
+            @include media(1110){
+                left: -354px;
+            }
+            &.open{
+                display: block;
+            }
+        }
+        &-list{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 300px;
+            padding: 36px 32px;
+        }
+        &-item{
+            margin-bottom: 8px;
+            &-red{
+                .filter__section-item-name{
+                    color: #c80a09;      
+                }
+            }
+            label{
+                cursor: pointer;
+                input{
+                    display: none;
+                    &:checked{
+                        ~.filter__section-item-check{
+                            border: 1px solid #000000;
+                            img{
+                                opacity: 1;
+                            }
+                        }
+                        ~.filter__section-item-name{
+                            color: #c80a09;    
+                        }
+                    }
+                }
+            }
+            &-check{
+                width: 16px;
+                height: 16px;
+                border-radius: 2px;
+                border: 1px solid #919191;
+                margin-right: 8px;
+                img{
+                    width: 9px;
+                    opacity: 0;
+                    transition: .3s;
+                }        
+            }
+            &-name{
+                color: #000000;
+                letter-spacing: 0.3px;
+                line-height: 24px;
+                transition: .3s;
+            }
+        }
+        &-btn{
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(241, 242, 245, 0.3);
+            color: #000000;
+            img{
+                margin-right: 10px;
+            }  
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.filter{
+    &__price{
+        position: relative;
+        &-range{
+            width: 330px;
+            box-shadow: 5px 12px 24px rgba(0, 0, 0, 0.21);
+            border-radius: 4px;
+            background-color: #ffffff;
+            z-index: 1;
+            position: absolute;
+            top: 100%;
+            display: none;
+            &.open{
+                display: block;
+            }
+            &-values{
+                padding: 24px 24px 0;
+                &-item{
+                    input{
+                        display: block;
+                        max-width: 100%;
+                        width: 111px;
+                        height: 38px;
+                        padding-left: 12px;
+                        border: 0;
+                        border-radius: 3px;
+                        background-color: #f1f2f5;
+                    }
+                }
+            }
+            &-slider{
+                padding: 0 24px;
+                margin: 20px 0 30px;
+                &-inner{
+                    .irs--flat, .irs-bar{
+                        height: 2px;
+                        border-radius: 1px;
+                        background-color: #c80a09;    
+                    }
+                    .irs--flat, .irs-line{
+                        height: 2px;
+                        border-radius: 1px;
+                        background-color: #d8d8d8;    
+                    }
+                    .irs--flat, .irs-handle{
+                        top: 10px;
+                        width: 32px;
+                        height: 32px;
+                        box-shadow: 0 2px 11px rgba(200, 10, 9, 0.11);
+                        background-color: #c80a09;
+                        border-radius: 50%;
+                        i{
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+            &-btn{
+                background-color: rgba(241, 242, 245, 0.3);
+                width: 100%;
+                padding: 20px 0;
+                span{
+                    margin-left: 12px; 
+                    color: #000000;
+                    line-height: 13px;
+                }
+            }
+        }
+    }
+}

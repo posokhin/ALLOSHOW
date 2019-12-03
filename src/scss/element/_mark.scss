@@ -1,0 +1,24 @@
+.marks{
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 61px;
+        height: 30px;
+        box-shadow: 0 7px 14px rgba(200, 10, 9, 0.38);
+        border-radius: 4px;
+        background-color: #c80a09;
+        transition: .3s;
+        a{
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.87px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        &:hover{
+            background-color: #f52221;
+        }
+    }
+}

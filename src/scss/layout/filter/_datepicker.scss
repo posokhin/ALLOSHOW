@@ -1,0 +1,11 @@
+.filter{
+    &__date{
+        position: relative;
+    }
+    &__datepicker{
+        top: 100% !important;
+        @include media(1023){
+            left: 0 !important;
+        }
+    }
+}

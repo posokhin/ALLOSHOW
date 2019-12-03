@@ -1,0 +1,63 @@
+.filter{
+    &__btn{
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+        border-radius: 22px;
+        background-color: #ffffff;      
+        padding: 13px 24px;
+        text-align: center;
+        transition: .3s;
+        span{
+            color: #111118;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &-val{
+            color: #4a4a4a;
+            font-weight: 400;
+            letter-spacing: 0.3px; 
+            margin-left: 5px;    
+            strong{
+                color: #000000;
+                font-size: 16px;
+                font-weight: 500;  
+            }
+        }
+        &:hover,&.active{
+            transform: translateY(-10px);
+        }
+        &.active{
+            background-color: #c80a09;
+            color: white;
+            span{
+                color: white;
+            }   
+            .filter__btn-val{
+                color: white;
+                strong{
+                    color: inherit;
+                }
+            } 
+        }
+    }
+    &__date{
+        margin: 30px 0 0;
+        margin-right: 16px;
+    }
+    &__price{
+        margin: 30px 0 0;
+        margin-right: 16px;
+    }
+    &__section{
+        margin: 30px 0 0;
+        margin-right: 16px;
+    }
+    &__form{
+        position: relative;
+        @include media(1023){
+            align-items: flex-end;
+        }
+    }
+}

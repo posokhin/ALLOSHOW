@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title ALLOSHOW
+        link(rel="stylesheet", href="style.css")
+    body
+        include blocks/_header
+        section.event
+            .event__top
+                .event__slider.swiper-container.js-slider-event
+                    ul.event__slider-list.swiper-wrapper
+                        li.event__slider-item.swiper-slide
+                            img(src="img/event-1.png", alt="")
+                        li.event__slider-item.swiper-slide
+                            img(src="img/event-1.png", alt="")
+                        li.event__slider-item.swiper-slide
+                            video(autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" controls="controls")
+                                source(src="video/2-mp4.mp4", type="video/mp4")
+                .event__data
+                    .container
+                        .event__data-wrapper
+                            .event__tags.flex.aic
+                                .event__tags-item
+                                    a(href="") # Балет
+                                .event__tags-item 
+                                    a(href="") # театр
+                            .event__slider-nav
+                                .event__slider-nav-item.event__slider-nav-item--prev
+                                    i.i-ARROW
+                                .event__slider-nav-item.event__slider-nav-item--next
+                                    i.i-ARROW
+                            .event__data-title
+                                .marks
+                                    .marks__item
+                                        a(href="") Акция
+                                h1 Балет «Лебединое озеро»
+                .event__top-info
+                    .event__top-info-row.flex
+                        .event__top-info-left.flex
+                            .event__top-info-col
+                                span Дата проведения
+                                a(href="") 16 августа - 24 октября 2019
+                            .event__top-info-col
+                                span Место проведения
+                                a(href="") Эрмитажный театр
+                            .event__top-info-col
+                                span В наличии:
+                                p Больше 50 билетов
+                        .event__top-info-right.flex.aic
+                            .event__top-info-price
+                                .event__top-info-price-old 2400 ₽
+                                .event__top-info-price-new от 
+                                    span 1 500 ₽
+                            a(href="").btn.btn-red Купить билет
+            section.breadcrumbs
+                .container
+                    ul.breadcrumbs__list.flex.aic
+                        li.breadcrumbs__item
+                            a(href="") Главная
+                        li.breadcrumbs__item
+                            a(href="") Афиша событий
+                        li.breadcrumbs__item
+                            a(href="") Балет «Лебединое озеро» (СПб Театр балета им. П.И.Чайковского)
+            section.event__content
+                .container
+                    .event__content-row.flex-wrap
+                        .event__desc
+                            h2 О событии
+                            .event__desc-buttons.flex.aic
+                                a(href="").event__desc-buttons-item.flex.aic
+                                    i.i-event-video
+                                    .event__desc-buttons-item-txt
+                                        p Видео с события
+                                        span СМОТРЕТЬ 
+                                            i.i-ARROW
+                                a(href="").event__desc-buttons-item.flex.aic
+                                    i.i-event-gallery
+                                    .event__desc-buttons-item-txt
+                                        p Галерея события 
+                                        span СМОТРЕТЬ 
+                                            i.i-ARROW
+                            ul.event__desc-list
+                                li.event__desc-item.flex.aic
+                                    span Музыка:
+                                    span П.И.Чайковский.
+                                li.event__desc-item.flex.aic
+                                    span Либретто:
+                                    span Владимир Бегичев и Василий Гельцер.
+                                li.event__desc-item.flex.aic
+                                    span Либретто: 
+                                    span Владимир Бегичев и Василий Гельцер.
+                                li.event__desc-item.flex.aic
+                                    span Хореография: 
+                                    span Мариус Петипа, Лев Иванов.
+                                li.event__desc-item.flex.aic
+                                    span Редакция: 
+                                    span Константин Сергеев.
+                            .event__desc-text
+                                .event__desc-text-wrap
+                                    p «Лебединое озеро» – одно из самых фантастических и совершенных творений мирового искусства и самый известный балет в мире. Его хореография уже на протяжении долгого времени считается общепризнанным шедевром мирового балета, одним из ярчайших достижений русской национальной культуры
+                                    p «Лебединое озеро» – одно из самых фантастических и совершенных творений мирового искусства и самый известный балет в мире. Его хореография уже на протяжении долгого времени считается общепризнанным шедевром мирового балета, одним из ярчайших достижений русской национальной культуры
+                                a(href="").js-open-event-desc-text Читать далее
+                            .event__desc-social
+                                span Поделиться: 
+                                ul.event__desc-social-list
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-telegram
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-viber
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-message
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-whats
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-vk-rounded
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-ok
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-fb-rounded
+                        .event__short
+                            .event__short-content
+                                ul.event__short-list
+                                    li.event__short-item
+                                        .event__short-title дата
+                                        .event__short-item-right
+                                            a(href="").tdn 16 августа - 24 октября 2019
+                                    li.event__short-item
+                                        .event__short-title место проведения
+                                        .event__short-item-right
+                                            a(href="").tdn Эрмитажный театр
+                                            p г. Санкт-Петербург, Дворцовая наб., д.34
+                                            a(href="#event-map").js-scroll-map На карте
+                                    li.event__short-item
+                                        .event__short-title стоимость билетов
+                                        .event__short-item-right
+                                            p 3200 - 5800 ₽ 
+                                    li.event__short-item
+                                        .event__short-title билеты в рассрочку
+                                        .event__short-item-right
+                                            a(href="") Условия рассрочки
+                                    li.event__short-item
+                                        .event__short-title ограничения по возрасту
+                                        .event__short-item-right
+                                            p 0+
+                                .event__short-timer
+                                    .event__short-timer-title до ближайшего осталось:
+                                    ul.event__short-timer-list.flex.aic
+                                        .event__short-timer-item.event__short-timer-item--days
+                                            p 01
+                                            span дней
+                                        .separate :
+                                        .event__short-timer-item.event__short-timer-item--hours
+                                            p 16
+                                            span часов
+                                        .separate :
+                                        .event__short-timer-item.event__short-timer-item--minutes
+                                            p 34
+                                            span минут
+                            .event__short-buttons.flex-wrap
+                                .event__short-buttons-item
+                                    .event__short-buttons-item-inner.flex.aic
+                                        .event__short-buttons-icon
+                                            i.i-music
+                                        .event__short-buttons-item-right
+                                            p Провели<br>7000 концертов  
+                                .event__short-buttons-item
+                                    .event__short-buttons-item-inner.flex.aic
+                                        .event__short-buttons-icon
+                                            i.i-ticket
+                                        .event__short-buttons-item-right
+                                            p Более 2000<br>билетов в день 
+                                .event__short-buttons-item
+                                    .event__short-buttons-item-inner.flex.aic
+                                        .event__short-buttons-icon
+                                            i.i-pay
+                                        .event__short-buttons-item-right
+                                            p Все виды<br>оплаты 
+                                .event__short-buttons-item
+                                    .event__short-buttons-item-inner.flex.aic
+                                        .event__short-buttons-icon
+                                            i.i-wifi
+                                        .event__short-buttons-item-right
+                                            p 100% надежный<br>эквайринг 
+                        include blocks/_select-ticket
+                        .event__tickets
+                            img(src="img/tickets.png", alt="")
+                        .event__contacts#event-map
+                            h2 Адрес
+                            .event__contacts-map
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8d649037a980226086e7de301ab776e7fe1c91da7edf29b93cd61a74014027e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                            .event__contacts-info
+                                span Место проведения
+                                p.event__contacts-info-place Эрмитажный театр
+                                p.event__contacts-info-address г. Санкт-Петербург, Дворцовая наб., д.34
+        include blocks/_slider-skip
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/main.js")

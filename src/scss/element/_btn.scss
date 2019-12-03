@@ -1,0 +1,101 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+    &-red{
+        max-width: 135px;
+        width: 100%;
+        height: 42px;
+        box-shadow: 0 7px 13px -4px rgba(238, 5, 4, 0.4);
+        border-radius: 25px;
+        background-color: #c80a09;  
+        color: #f8f9fa;
+        font-size: 15px;
+        letter-spacing: 0.32px;
+        line-height: 14px;
+        &:hover{
+            background-color: #e30301;
+        }
+    }
+    &-green{
+        background-color: #2ab34e;
+        box-shadow: 0 7px 14px -4px rgba(0, 0, 0, 0.21);
+        border-radius: 25px;
+        background-color: #2ab34e;
+        color: white;
+        padding: 14px 24px;
+        &:hover{
+            background-color: lighten(#2ab34e, 10%);
+        }
+    }
+    &-slider{
+        position: relative;
+        width: 42px;
+        height: 42px;
+        transition: .5s;
+        &:hover{
+            width: 135px;
+            border-radius: 25px;
+            p{
+                display: block;
+                right: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                opacity: 1;
+                animation: fadeInTextSlider .5s;
+            }
+            .plus{
+                position: absolute;
+                opacity: 0;
+                display: none;
+                animation: fadeOutTextSlider .3s;
+            }
+        }
+        &.active{
+            width: 135px;
+            border-radius: 25px;
+            p{
+                display: block;
+                right: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                opacity: 1;
+                animation: fadeInTextSlider .5s;
+            }
+            .plus{
+                position: absolute;
+                opacity: 0;
+                display: none;
+                animation: fadeOutTextSlider .3s;
+            }
+        }
+        p{
+            position: absolute;
+            width: 100px;
+            opacity: 0;
+        }
+        .plus{
+            transition: .3s;
+            display: block;
+            width: 15px;
+            height: 3px;
+            background: #ffffff;
+            position: absolute;
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: #ffffff;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

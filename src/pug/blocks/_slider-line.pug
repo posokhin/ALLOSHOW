@@ -1,0 +1,21 @@
+section.slider-line
+    .slider-line__wrapper
+        .slider-line__video
+            video(autoplay loop muted playsinline controls)
+                source(src="video/2.webm", type="video/webm").webm
+                source(src="video/2-mp4.mp4", type="video/mp4").mp4
+        .slider-line__content
+            .container
+                .slider-line__content-top
+                    ul.slider-line__content-top-list.flex.aic
+                        li.slider-line__content-top-item(data-src-webm="video/1.webm" data-src-mp4="video/1-mp4.mp4" data-link="1") НАИВ 
+                        li.slider-line__content-top-item(data-src-webm="video/2.webm" data-src-mp4="video/2-mp4.mp4" data-link="2").active Ленинград  
+                        li.slider-line__content-top-item(data-src-webm="video/1.webm" data-src-mp4="video/1-mp4.mp4" data-link="3") As I Lay Dying  
+                    a(href="").slider-line__content-top-btn.btn.btn-red Купить билет
+        .slider-line__text
+            p ГАЗПРОМ АРЕНА - 
+                b Ленинград - 2019 
+                |- финальный тур по крупнейшим стадионам страны - 
+                b 29 сентября 2019
+                |, воскресение  начало в 19:30 - билеты от 
+                b 3 500 ₽

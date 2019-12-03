@@ -1,0 +1,60 @@
+.footer{
+    &__row{
+        padding: 40px 0;
+        border-top: 1px solid rgba(0,0,0,.05);
+        margin: 0 -15px;
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        padding: 0 15px;
+        @include media(1023){
+            width: 25%;
+            &-copy{
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+        }
+    }
+    &__social{
+        margin-top: 30px;
+    }
+    &__menu{
+        &-item{
+            margin-bottom: 16px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &-link{
+            color: #525256;
+            letter-spacing: 0.17px;  
+            transition: .3s;
+            &:hover{
+                color: #c80a09;
+            }    
+        }
+    }
+    &__pay{
+        &-title{
+            color: #525256;   
+            letter-spacing: 0.17px;
+            margin-bottom: 10px;
+        }
+        &-list{
+            max-width: 160px;
+        }
+        &-item{
+            margin-right: 16px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__copy{
+        margin-top: auto;
+    }
+}

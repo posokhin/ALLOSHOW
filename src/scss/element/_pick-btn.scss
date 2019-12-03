@@ -1,0 +1,40 @@
+.pick{
+    &-btn{
+        display: flex;
+        align-items: center;
+        padding: 30px 30px 0;
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 80px;
+            height: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.09);
+            border-radius: 19px;
+            background-color: #ffffff;  
+            margin-right: 11px;
+            transition: .3s;
+            @include media(1024){
+                font-size: 14px;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            &.active{
+                background-color: #c80a09;   
+                color: white;
+            }
+        }
+    }
+    &-accept{
+        cursor: pointer;
+        padding: 20px 0;
+        text-align: center;
+        background-color: rgba(241, 242, 245, 0.3);
+        width: 100%;
+        img{
+            margin-right: 10px;
+        }
+    }
+}

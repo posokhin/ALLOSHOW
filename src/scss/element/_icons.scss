@@ -1,0 +1,111 @@
+.i{
+    &-arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 11px;
+        height: 9px;
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 0;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: black;
+            transform: rotate(45deg);
+        }
+        &::after{
+            position: absolute;
+            bottom: 0;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: black;
+            transform: rotate(-45deg);
+        }
+        &-left{
+            transform: rotate(180deg);
+        }
+    }
+    &-event-video{
+        display: block;
+        background: url("img/ico/i-event-video.svg") no-repeat center/contain;
+        width: 64px;
+        height: 64px;
+    }
+    &-event-gallery{
+        display: block;
+        background: url("img/ico/i-event-gallery.svg") no-repeat center/contain;
+        width: 64px;
+        height: 64px;
+    }
+    &-telegram{
+        display: block;
+        background: url("img/ico/i-telegram.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;    
+    }
+    &-viber{
+        display: block;
+        background: url("img/ico/i-viber.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;    
+    }
+    &-message{
+        display: block;
+        background: url("img/ico/i-message.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;    
+    }
+    &-whats{
+        display: block;
+        background: url("img/ico/i-whats.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;    
+    }
+    &-vk-rounded{
+        display: block;
+        background: url("img/ico/i-vk.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;    
+    }
+    &-ok{
+        display: block;
+        background: url("img/ico/i-ok.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;    
+    }
+    &-fb-rounded{
+        display: block;
+        background: url("img/ico/i-fb.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;    
+    }
+    &-music{
+        display: block;
+        background: url("img/ico/i-music.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;     
+    }
+    &-pay{
+        display: block;
+        background: url("img/ico/i-pay.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;     
+    }
+    &-wifi{
+        display: block;
+        background: url("img/ico/i-wifi.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;     
+    }
+    &-ticket{
+        display: block;
+        background: url("img/ico/i-ticket.svg") no-repeat center/contain;
+        width: 32px;
+        height: 32px;     
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo-/-alloshow-copy-2">
+            <rect id="bounds" x="0" y="0" width="24" height="24"></rect>
+        </g>
+        <path d="M22.7071068,20.2928932 C23.0976311,20.6834175 23.0976311,21.3165825 22.7071068,21.7071068 C22.3165825,22.0976311 21.6834175,22.0976311 21.2928932,21.7071068 L18.2928932,18.7071068 C17.9023689,18.3165825 17.9023689,17.6834175 18.2928932,17.2928932 C18.6834175,16.9023689 19.3165825,16.9023689 19.7071068,17.2928932 L22.7071068,20.2928932 Z" id="Stroke-3" fill="#000000" fill-rule="nonzero"></path>
+        <path d="M10.5,18 C5.80557963,18 2,14.1944204 2,9.5 C2,4.80557963 5.80557963,1 10.5,1 C15.1944204,1 19,4.80557963 19,9.5 C19,14.1944204 15.1944204,18 10.5,18 Z M10.5,16 C14.0898509,16 17,13.0898509 17,9.5 C17,5.91014913 14.0898509,3 10.5,3 C6.91014913,3 4,5.91014913 4,9.5 C4,13.0898509 6.91014913,16 10.5,16 Z" id="Oval" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

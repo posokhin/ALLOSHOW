@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title ALLOSHOW
+        link(rel="stylesheet", href="style.css")
+    body
+        include blocks/_header
+        section.breadcrumbs
+            .container
+                ul.breadcrumbs__list.flex.aic
+                    li.breadcrumbs__item
+                        a(href="") Главная
+                    li.breadcrumbs__item
+                        a(href="") Афиша мероприятий Санкт-Петербурга
+        section.events
+            .container
+                .events__top.flex-wrap.jcsb.aic
+                    h1 Афиша мероприятий Санкт-Петербурга
+                    .events__top-find Найдено: 1 385 событий
+                .filter
+                    form(action="" method="").filter__form.flex-wrap
+                        .filter__date
+                            a(href="").filter__btn.js-filter-datepicker
+                                span Дата:
+                                .filter__btn-val 15.10.2019
+                            input(type="hidden" id="filter-from")
+                            input(type="hidden" id="filter-to")
+                        .filter__price
+                            a(href="").filter__btn.js-open-range
+                                span Стоимость:
+                                .filter__btn-val от 
+                                    strong 0 ₽ 
+                                    |до 
+                                    strong 3 000 ₽
+                            .filter__price-range.js-hide
+                                .filter__price-range-values.flex.aic.jcsb
+                                    .filter__price-range-values-item.filter__price-range-values-from
+                                        input(type="text" placeholder="от 0 ₽")
+                                    .filter__price-range-values-item.filter__price-range-values-to
+                                        input(type="text" placeholder="до 3000 ₽")
+                                .filter__price-range-slider
+                                    input(type="text" name="price" value="").js-range-slider
+                                a(href="").filter__price-range-btn.flex.aic.jcc
+                                    //.i-close.i-close-red
+                                    <img src="img/ico/accept.svg" alt="">
+                                    span Применить
+                        .filter__section
+                            a(href="").filter__btn.js-open-filter-list
+                                span Разделы:
+                            .filter__section-wrap.js-hide
+                                ul.filter__section-list
+                                    li.filter__section-item
+                                        label(for="0").flex.aic
+                                            input(type="checkbox" id="0")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name R'n'B
+                                    li.filter__section-item
+                                        label(for="1").flex.aic
+                                            input(type="checkbox" id="1")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Авторский
+                                    li.filter__section-item
+                                        label(for="2").flex.aic
+                                            input(type="checkbox" id="2")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Альтернатива
+                                    li.filter__section-item
+                                        label(for="3").flex.aic
+                                            input(type="checkbox" id="3")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Джаз/Блюз
+                                    li.filter__section-item
+                                        label(for="4").flex.aic
+                                            input(type="checkbox" id="4")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Диско
+                                    li.filter__section-item
+                                        label(for="5").flex.aic
+                                            input(type="checkbox" id="5")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Инди
+                                    li.filter__section-item
+                                        label(for="6").flex.aic
+                                            input(type="checkbox" id="6")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Классика
+                                    li.filter__section-item
+                                        label(for="7").flex.aic
+                                            input(type="checkbox" id="7")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Метал
+                                    li.filter__section-item
+                                        label(for="8").flex.aic
+                                            input(type="checkbox" id="8")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Панк
+                                    li.filter__section-item
+                                        label(for="9").flex.aic
+                                            input(type="checkbox" id="9")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Поп
+                                    li.filter__section-item
+                                        label(for="10").flex.aic
+                                            input(type="checkbox" id="10")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Регги
+                                    li.filter__section-item
+                                        label(for="11").flex.aic
+                                            input(type="checkbox" id="11")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Рок
+                                    li.filter__section-item
+                                        label(for="12").flex.aic
+                                            input(type="checkbox" id="12")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Рок-н-ролл
+                                    li.filter__section-item
+                                        label(for="13").flex.aic
+                                            input(type="checkbox" id="13")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Рэп/Хип-хоп
+                                    li.filter__section-item
+                                        label(for="14").flex.aic
+                                            input(type="checkbox" id="14")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Соул
+                                    li.filter__section-item
+                                        label(for="15").flex.aic
+                                            input(type="checkbox" id="15")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Техно
+                                    li.filter__section-item
+                                        label(for="16").flex.aic
+                                            input(type="checkbox" id="16")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name Транс
+                                    li.filter__section-item.filter__section-item-red
+                                        label(for="17").flex.aic
+                                            input(type="checkbox" id="17")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name АКЦИИ
+                                    li.filter__section-item.filter__section-item-red
+                                        label(for="18").flex.aic
+                                            input(type="checkbox" id="18")
+                                            .filter__section-item-check.flex.aic.jcc
+                                                img(src="img/ico/accept.svg", alt="")
+                                            .filter__section-item-name СПЕЦПРЕДЛОЖЕНИЯ
+                                a(href="").filter__section-btn.flex.aic.jcc
+                                    img(src="img/ico/accept.svg", alt="")
+                                    span Применить фильтры
+                        ul.filter__tags.flex-wrap.aic
+                            li.filter__tags-item.flex.aic
+                                .filter__tags-item-name # КЛАССИКА
+                                a(href="").filter__tags-item-close
+                            li.filter__tags-item.flex.aic
+                                .filter__tags-item-name # ДЕТЯМ
+                                a(href="").filter__tags-item-close
+                            //li.filter__tags-item.filter__tags-item-more.flex.aic
+                                a(href="")
+                                    .i-arrow
+                        a(href="").filter__reset
+                            span
+                ul.events__list.flex-wrap
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                                    .slider-card__item-mark Новинка
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай
+                                a(href="").slider-card__item-content-title 
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Шоу "Принц цирка"
+                                a(href="").slider-card__item-content-title Шоу "Принц цирка"
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                                    .slider-card__item-mark Новинка
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай
+                                a(href="").slider-card__item-content-title 
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Шоу "Принц цирка"
+                                a(href="").slider-card__item-content-title Шоу "Принц цирка"
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                                    .slider-card__item-mark Новинка
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай
+                                a(href="").slider-card__item-content-title 
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Шоу "Принц цирка"
+                                a(href="").slider-card__item-content-title Шоу "Принц цирка"
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item.events__item-banner.flex-wrap
+                        .events__item-banner-item
+                            .slider-type-big__item
+                                .slider-type-big__item-top.flex.aic
+                                    a(href="").slider-type-big__item-top-hashtag # МЮЗИКЛ
+                                .slider-type-big__item-img.swiper-container.js-slider-meloman-img
+                                    img(src="img/slider-type-big/1.png", alt="")
+                                .slider-type-big__item-content
+                                    a(href="").slider-type-big__item-content-place ЛДМ. Новая сцена
+                                    .slider-type-big__item-content-title Хоррор-мюзикл «Лолита» 
+                                    .slider-type-big__item-content-date 29 сентября 2019, вcк 19:00
+                                    .slider-type-big__item-content-bottom.flex
+                                        a(href="").btn.btn-red Купить билет
+                                        .slider-type-big__item-content-price
+                                            p от
+                                                span 1 000 ₽
+                        .events__item-banner-item
+                            .slider-type-big__item
+                                .slider-type-big__item-top.flex.aic
+                                    a(href="").slider-type-big__item-top-hashtag # МЮЗИКЛ
+                                .slider-type-big__item-img.swiper-container.js-slider-meloman-img
+                                    img(src="img/slider-type-big/1.png", alt="")
+                                .slider-type-big__item-content
+                                    a(href="").slider-type-big__item-content-place ЛДМ. Новая сцена
+                                    .slider-type-big__item-content-title Хоррор-мюзикл «Лолита» 
+                                    .slider-type-big__item-content-date 29 сентября 2019, вcк 19:00
+                                    .slider-type-big__item-content-bottom.flex
+                                        a(href="").btn.btn-red Купить билет
+                                        .slider-type-big__item-content-price
+                                            p от
+                                                span 1 000 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                                    .slider-card__item-mark Новинка
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай
+                                a(href="").slider-card__item-content-title 
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Шоу "Принц цирка"
+                                a(href="").slider-card__item-content-title Шоу "Принц цирка"
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                                    .slider-card__item-mark Новинка
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай
+                                a(href="").slider-card__item-content-title 
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Шоу "Принц цирка"
+                                a(href="").slider-card__item-content-title Шоу "Принц цирка"
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                                    .slider-card__item-mark Новинка
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай
+                                a(href="").slider-card__item-content-title 
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Шоу "Принц цирка"
+                                a(href="").slider-card__item-content-title Шоу "Принц цирка"
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item.events__item-banner.events__item-banner-big.flex-wrap
+                        .events__item-banner-item
+                            .slider-type-big__item
+                                .slider-type-big__item-top.flex.aic
+                                    a(href="").slider-type-big__item-top-hashtag # МЮЗИКЛ
+                                .slider-type-big__item-img.swiper-container.js-slider-meloman-img
+                                    img(src="img/slider-type-big/1.png", alt="")
+                                .slider-type-big__item-content
+                                    a(href="").slider-type-big__item-content-place ЛДМ. Новая сцена
+                                    .slider-type-big__item-content-title Хоррор-мюзикл «Лолита» 
+                                    .slider-type-big__item-content-date 29 сентября 2019, вcк 19:00
+                                    .slider-type-big__item-content-bottom.flex
+                                        a(href="").btn.btn-red Купить билет
+                                        .slider-type-big__item-content-price
+                                            p от
+                                                span 1 000 ₽
+                        .events__item-banner-item
+                            .slider-type-big__item
+                                .slider-type-big__item-top.flex.aic
+                                    a(href="").slider-type-big__item-top-hashtag # МЮЗИКЛ
+                                .slider-type-big__item-img.swiper-container.js-slider-meloman-img
+                                    img(src="img/slider-type-big/1.png", alt="")
+                                .slider-type-big__item-content
+                                    a(href="").slider-type-big__item-content-place ЛДМ. Новая сцена
+                                    .slider-type-big__item-content-title Хоррор-мюзикл «Лолита» 
+                                    .slider-type-big__item-content-date 29 сентября 2019, вcк 19:00
+                                    .slider-type-big__item-content-bottom.flex
+                                        a(href="").btn.btn-red Купить билет
+                                        .slider-type-big__item-content-price
+                                            p от
+                                                span 1 000 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                                    .slider-card__item-mark Новинка
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай
+                                a(href="").slider-card__item-content-title 
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Шоу "Принц цирка"
+                                a(href="").slider-card__item-content-title Шоу "Принц цирка"
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                                    .slider-card__item-mark Новинка
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай
+                                a(href="").slider-card__item-content-title 
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Шоу "Принц цирка"
+                                a(href="").slider-card__item-content-title Шоу "Принц цирка"
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-old
+                                            p 1 900 ₽
+                                        .slider-card__item-content-bottom-price-new
+                                            p от
+                                                span 300 ₽
+                    li.events__item
+                        .slider-card__item
+                            .slider-card__item-img
+                                img(src="img/slider-skip/3.png", alt="")
+                                .slider-card__item-mark-container
+                                    .slider-card__item-mark Акция
+                            .slider-card__item-content
+                                .slider-card__item-content-title-hidden Спектакль «Укрощение строптивой»
+                                a(href="").slider-card__item-content-title Спектакль «Укрощение строптивой»
+                                .slider-card__item-content-desc
+                                    a(href="").slider-card__item-content-desc-place Театр-фестиваль Балтийский Дом
+                                    p.slider-card__item-content-desc-date 20 сентября 2019, Пт 19:30
+                                .slider-card__item-content-bottom.flex
+                                    a(href="").btn.btn-red.slider-card__item-content-bottom-btn Купить билет
+                                    .slider-card__item-content-bottom-price
+                                        .slider-card__item-content-bottom-price-normal
+                                            p от
+                                                span 300 ₽
+        section.pagination
+            .container
+                ul.pagination__list.flex.aic.jcc
+                    li.pagination__item.pagination__item-prev.disabled
+                        a(href="").flex.aic.jcc
+                            i.i-arrow.i-arrow-left
+                    li.pagination__item.active
+                        a(href="").flex.aic.jcc 1
+                    li.pagination__item
+                        a(href="").flex.aic.jcc 2
+                    li.pagination__item
+                        a(href="").flex.aic.jcc ...
+                    li.pagination__item
+                        a(href="").flex.aic.jcc 26
+                    li.pagination__item.pagination__item-next
+                        a(href="").flex.aic.jcc 
+                            i.i-arrow.i-arrow-right
+        section.seo-text
+            .container
+                .seo-text-container
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vero placeat ipsa eaque dolorum quia cum aperiam, harum perspiciatis voluptatum animi tenetur saepe error hic libero iusto odit modi natus.Fuga ad quaerat fugiat, facere ullam facilis necessitatibus libero nihil cum consequatur! Sed asperiores aspernatur 
+                    p quibusdam maiores? Enim autem provident est consectetur voluptatibus voluptates totam excepturi quas repellendus, cumque delectus.Veniam atque ut incidunt obcaecati nobis autem quidem in libero deleniti ratione rerum optio recusandae, aperiam officia, quos cumque molestias reiciendis commodi maiores nostrum accusamus? Non fuga odit illum ut?Culpa porro quos mollitia amet quisquam recusandae eius, 
+                    p eaque nobis cum adipisci rem magnam unde labore voluptates obcaecati nesciunt inventore praesentium asperiores quae repellendus quidem temporibus reiciendis. Alias, cum totam.A qui nemo omnis, officiis fuga nostrum corrupti tenetur sint voluptatum? Deserunt modi hic voluptatibus iste unde aperiam pariatur earum adipisci asperiores natus! Eaque, tempora. Ullam commodi facere dolor 
+                    p voluptate.Necessitatibus vitae commodi soluta laudantium natus quibusdam harum debitis ullam minus doloremque sunt, et facilis odit illum ex esse iusto ipsam asperiores aspernatur at. Veritatis velit corporis voluptatibus sequi quae.Illo,
+                    p minus tempora consequuntur quis iusto error placeat quam aliquam culpa? Nisi, officiis quidem vel maiores quas magni esse ducimus. Iure, mollitia. Et voluptatibus consectetur ipsam cum rem fugit quis!Eaque quo quas cum nam voluptates debitis blanditiis ullam, veritatis molestias placeat voluptate cupiditate possimus odio recusandae rerum, magni nostrum. Odit itaque, quibusdam libero ratione labore numquam velit repellat? Illum.Nostrum culpa nesciunt voluptate incidunt odio voluptas nulla neque repudiandae vel consectetur quia, illo quidem illum explicabo 
+                    p asperiores dolores nemo repellendus tempora dolorum maiores dolor. Distinctio veritatis earum ad vero?Placeat blanditiis expedita minima odio harum, facere dolores? Suscipit aliquid molestias incidunt? Eaque reprehenderit at quaerat est perferendis fugit, illo mollitia vero similique, pariatur ea ipsa dignissimos placeat sit necessitatibus!Animi, excepturi provident dolorum illo ratione voluptas 
+                    p esse nam officia in. Laboriosam cum consequatur maiores quo rem, obcaecati sint pariatur sapiente, blanditiis alias laborum numquam, eligendi officia dolorem similique praesentium.Voluptas natus laudantium placeat quasi ab culpa fugit, maiores itaque sint at, quis eum atque soluta sapiente ipsum. Sed tempore fugiat quae voluptate debitis ratione tempora aliquid, impedit explicabo 
+                    p dignissimos.Molestias ipsam expedita maxime quasi ipsa dicta numquam possimus reprehenderit eos iure quibusdam, in odio quisquam quaerat nostrum, veniam laborum soluta ratione rem perferendis aperiam id impedit! Repudiandae, natus et.Vel a, animi tempora hic ut quis explicabo dolorem corporis ex ratione repellat impedit tempore ipsa ullam sit culpa perspiciatis nobis est error. Amet, explicabo 
+                    p voluptatum. Libero ad aspernatur molestias!Ducimus mollitia omnis impedit hic rem commodi quasi facilis. Iusto esse, error, enim quia sequi dolor numquam blanditiis aliquam tempore eveniet ratione, quae officiis exercitationem sed sapiente non deserunt cumque!Architecto pariatur laudantium rem quibusdam ab incidunt. Laborum libero amet in autem dolor aperiam soluta! Odio doloribus itaque ipsa reiciendis! Unde, nemo? Itaque harum vitae adipisci fugiat incidunt qui porro!Excepturi quae doloribus delectus ratione. Maxime eum nisi necessitatibus est fugiat sit 
+                    p consectetur tempora ratione ipsum quas eligendi at nulla odio, architecto beatae rem suscipit voluptate, sint autem voluptatum exercitationem!Magnam sapiente, eum atque quae delectus veniam voluptatum eaque accusamus natus. Pariatur, nobis quasi iusto itaque obcaecati cumque inventore corporis sed, doloremque dolores esse fugit, animi repellat deserunt ea nam.Quibusdam ex at dolor non, sequi nisi! Nam eius beatae quod dignissimos eveniet perferendis blanditiis necessitatibus, nemo 
+                    p quisquam autem ipsam mollitia, atque corrupti modi dolores. Delectus sit qui pariatur modi?Eos explicabo praesentium nostrum quaerat illo, nulla vel in harum sint debitis officiis ducimus ab ratione non et veniam reiciendis est amet earum ut consequatur! Nisi accusamus fugit magnam recusandae.
+                a(href="").seo-text-btn Читать далее
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/ion.rangeSlider.min.js")
+        script(src="js/main.js")
+        script(src="js/filter-picker.js")

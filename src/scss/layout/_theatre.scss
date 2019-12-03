@@ -1,0 +1,29 @@
+.theatre{
+    margin-bottom: 90px;
+    &__background{
+        background: url("img/t-back.png") no-repeat center/cover;
+        margin: 50px 0 0;
+    }
+    &-nav{
+        padding-bottom: 75px;
+        h3{
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 76px;       
+        }
+        &__list{
+            justify-content: space-between;
+        }
+        &__item{
+            &-link{
+                color: rgba(255, 255, 255, 0.63);
+                letter-spacing: 0.6px;    
+                transition: .3s;
+                &:hover{
+                    color: #c80a09;
+                }
+            }
+        }
+    }
+}

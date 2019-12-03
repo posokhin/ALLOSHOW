@@ -1,0 +1,14 @@
+.slider-main{
+    &__banner{
+        width: 100%;
+        height: 600px;
+        @include media(1024){
+            height: 500px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

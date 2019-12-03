@@ -1,0 +1,32 @@
+.overlay
+.popup.popup-city
+    .i-close
+    .popup-city__title Ваш регион 
+    ul.popup-city__list
+        li.popup-city__item
+            a(href="") Москва 
+        li.popup-city__item
+            a(href="") Новосибирск 
+.popup.popup-call
+    .i-close
+    form(action="" method="").popup__form
+        .popup__form-item
+            input(type="text" required)
+            .popup__form-item-placeholder.flex.aic Ваше имя
+                span *
+        .popup__form-item
+            input(type="text" required data-phone)
+            .popup__form-item-placeholder.flex.aic Ваш телефон
+                span *
+        button(type="submit").btn.btn-green.js-send-popup-call Заказать звонок
+.popup.popup-ok
+    .i-close
+    .popup-ok__title Мы свяжемся с вами в ближайшее время. 
+    ul.popup-ok__list
+        li.popup-ok__item
+            .popup-ok__item-time с 9 до 20 часов 
+            .popup-ok__item-character в будние
+        li.popup-ok__item
+            .popup-ok__item-time с 10 до 19 часов
+            .popup-ok__item-character в праздничные и выходные дни.
+    a(href="").btn.btn-green.popup-ok-btn.js-close-popup ОК

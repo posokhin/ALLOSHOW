@@ -1,0 +1,85 @@
+.slider-line{
+    overflow: hidden;
+    margin-bottom: 100px;
+    &__wrapper{
+        position: relative;
+    }
+    &__video{
+        height: 600px;
+        video{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            opacity: 0.45;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__text{
+        position: absolute;
+        bottom: 0;
+        background-color: #000000;
+        padding: 13px 0;
+        width: 100%;
+        p{
+            width:2000px;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.3px;  
+            animation: line 20s linear infinite;    
+            b{
+                color: #c80a09;  
+            }
+        }
+    }
+    &__content{
+        &-top{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            max-width: 1170px;
+            width: 100%;
+            height: 100%;
+            padding: 70px 0 90px;
+            @include media(1200){
+                left: 0;
+                padding: 70px 40px 90px;
+            }
+            &-list{
+                justify-content: space-between;
+            }
+            &-item{
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: -0.25px;  
+                color: #989898;
+                transition: 0.3s;
+                &:hover{
+                    color: #c80a09;
+                }
+                &.active{
+                    color: #ffffff;
+                }  
+            }
+            &-btn{
+                margin-top: auto;
+            }
+        }
+    }
+}

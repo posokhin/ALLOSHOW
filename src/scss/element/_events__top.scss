@@ -1,0 +1,17 @@
+.events{
+    &__top{
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+        &-find{
+            opacity: 0.54;
+            color: #000000;
+            font-size: 16px;
+            font-weight: 300;   
+            @include media(850){
+                width: 100%;
+                margin-top: 20px;
+                padding: 0;
+            }  
+        }
+    }
+}

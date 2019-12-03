@@ -1,0 +1,34 @@
+.i-close{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    margin-left: 9px;
+    &::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #d8d8d8;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #d8d8d8;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(-45deg);
+    }
+    &-red{
+        &::before, &::after{
+            background-color: #c80a09;
+        }
+    }
+}

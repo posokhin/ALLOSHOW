@@ -1,0 +1,75 @@
+.header{
+    transition: .3s;
+    z-index: 9;
+    &.fix{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation: slideHeader .5s;
+    }
+    &__top{
+        padding-left: 80px;
+        background: white;
+        @include media(1024){
+            padding-left: 30px;
+        }
+        @include media(1023){
+            display: none;
+        }
+        &-geo{
+            margin-right: 50px;
+            a{
+                transition: .3s;
+                &:hover{
+                    color: #c80a09;  
+                }
+                i{
+                    font-size: 16px;
+                    margin-right: 10px;
+                    &::before{
+                        color: black;
+                    }
+                }
+                color: #000000; 
+                letter-spacing: 0.3px;
+            }
+        }
+        &-item{
+            margin-right: 50px;
+            a{
+                letter-spacing: 0.3px;  
+                color: #a9a9a9;
+                transition: .3s;
+                &:hover{
+                    color: #000000;  
+                }
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &-phone{
+            margin-left: auto;
+            width: 40%;
+            &-tel{
+                color: #000000;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;  
+                flex: 1;
+                width: 50%;
+                padding: 0 20px;
+                text-align: right;
+            }
+            &-call{
+                padding: 8px 40px;
+                color: #ffffff;
+                text-align: center;
+                background-color: #31cb5e;
+                letter-spacing: 0.3px; 
+                width: 210px;
+            }
+        }
+    }
+}
