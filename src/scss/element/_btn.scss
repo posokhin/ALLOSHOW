@@ -1,9 +1,11 @@
 .btn{
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     justify-content: center;
     transition: .3s;
     cursor: pointer;
+    margin-bottom: 0 !important;
+    text-decoration: none !important;
     &-red{
         max-width: 135px;
         width: 100%;
@@ -11,7 +13,7 @@
         box-shadow: 0 7px 13px -4px rgba(238, 5, 4, 0.4);
         border-radius: 25px;
         background-color: #c80a09;  
-        color: #f8f9fa;
+        color: #f8f9fa !important;
         font-size: 15px;
         letter-spacing: 0.32px;
         line-height: 14px;
@@ -24,10 +26,10 @@
         box-shadow: 0 7px 14px -4px rgba(0, 0, 0, 0.21);
         border-radius: 25px;
         background-color: #2ab34e;
-        color: white;
+        color: #f8f9fa !important;
         padding: 14px 24px;
         &:hover{
-            background-color: lighten(#2ab34e, 10%);
+            background-color: #40d167;
         }
     }
     &-slider{
@@ -97,5 +99,14 @@
                 transform: rotate(-90deg);
             }
         }
+    }
+    &-small{
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.65px !important;
+        line-height: 14px;    
+        max-width: 84px;
+        height: 30px !important;
+        padding: 8px 12px;
     }
 }

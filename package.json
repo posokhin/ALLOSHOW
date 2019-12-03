@@ -22,15 +22,18 @@
     "gulp-postcss": "^8.0.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
     "gulp-uncss": "^1.0.6",
     "gulp-watch": "^5.0.1",
     "imask": "^5.2.1",
     "ion-rangeslider": "^2.3.0",
+    "lg-video": "^1.2.2",
     "swiper": "^5.0.4"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
+    "lightgallery": "^1.6.12",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
   },

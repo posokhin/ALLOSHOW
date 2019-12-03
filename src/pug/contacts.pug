@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title ALLOSHOW
+        link(rel="stylesheet" href="style.css")
+    body
+        include blocks/_header
+        section.breadcrumbs
+            .container
+                ul.breadcrumbs__list.flex.aic
+                    li.breadcrumbs__item
+                        a(href="") Главная
+                    li.breadcrumbs__item
+                        a(href="") Контакты
+        section.contacts
+            .container
+                h1 Контакты
+                .contacts__row.flex-wrap
+                    .contacts__col.contacts__col--form
+                        form(action="").form
+                            .form__title Свяжитесь с нами
+                            .form__field
+                                input(type="text" required)
+                                .form__field-placeholder Ваше имя
+                                    span *
+                                .form__error
+                            .form__field
+                                input(type="text" required)
+                                .form__field-placeholder Ваш e-mail
+                                    span *
+                                .form__error
+                            .form__field
+                                input(type="text" required)
+                                .form__field-placeholder Ваш телефон
+                                    span *
+                                .form__error
+                            .form__field
+                                textarea
+                                .form__field-placeholder Комментарий
+                                    span *
+                                .form__error
+                            button(type="submit").btn.btn-green Отправить
+                            .form__privacy Нажимая кнопку «Отправить» вы соглашаетесь с 
+                                a(href="") политикой конфиденциальности
+                    .contacts__col.contacts__col--map
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/main.js")

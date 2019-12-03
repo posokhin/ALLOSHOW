@@ -2,17 +2,22 @@
 @import '../../node_modules/animate.css/animate';
 @import '../../node_modules/swiper/css/swiper.min';
 @import '../../node_modules/ion-rangeslider/css/ion.rangeSlider';
+@import '../../node_modules/lightgallery/src/sass/lightgallery.scss';
 
-@import './fonts/fonts';
-@import './fonts/ico';
-
-@import './help/_flex';
+/* @import './fonts/fonts';
+@import './fonts/ico'; */
+/* @import './help/_flex';
 @import './help/_mixins';
-@import './help/help-classes';
+@import './help/help-classes'; */
 
+@import './fonts/**/*.scss';
+@import './help/**/*.scss';
 @import './picker/pickmeup';
+@import './element/**/*.scss';
+@import './animations/animations';
+@import './layout/**/*.scss';
 
-@import './element/pick-btn';
+/* @import './element/pick-btn';
 @import './element/btn';
 @import './element/_slick-custom';
 @import './element/slider-top';
@@ -25,11 +30,9 @@
 @import './element/icons';
 @import './element/seo-text';
 @import './element/popup';
-@import './element/mark';
+@import './element/mark'; */
 
-@import './animations/animations';
-
-@import './layout/_base';
+/* @import './layout/_base';
 @import './layout/header/header__top';
 @import './layout/header/header__middle';
 @import './layout/header/header__bottom';
@@ -64,4 +67,4 @@
 
 @import './layout/event/event';
 
-@import './layout/select-ticket/select-ticket';
+@import './layout/select-ticket/select-ticket'; */
