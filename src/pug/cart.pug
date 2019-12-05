@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Корзина
+        link(rel="stylesheet" href="style.css")
+    body
+        include blocks/_header
+        section.breadcrumbs
+            .container
+                ul.breadcrumbs__list.flex.aic
+                    li.breadcrumbs__item
+                        a(href="") Главная
+                    li.breadcrumbs__item
+                        a(href="") Покупка билетов
+        section.cart
+            .container
+                .content
+                    h1 Покупка билетов
+                ul.cart__list
+                    li.cart__item.flex-wrap
+                        .i-close
+                        .cart__left.flex.aic
+                            .cart__img
+                                img(src="img/cart-img.png", alt="")
+                            .cart__info
+                                .cart__title Группировка "Ленинград"
+                                .cart__info-bottom.flex-wrap
+                                    .cart__info-bottom-item
+                                        p 20 сентября 2019
+                                        span Пятница 19:30
+                                    .cart__info-bottom-item
+                                        p Газпром Арена
+                                        span 
+                                            strong Партер 
+                                            | Ряд 3, Место 45
+                        .cart__right
+                            .cart__price 3 500 ₽
+                            span Cервисный сбор 350 ₽
+                    li.cart__item.flex-wrap
+                        .i-close
+                        .cart__left.flex.aic
+                            .cart__img
+                                img(src="img/cart-img.png", alt="")
+                            .cart__info
+                                .cart__title Face
+                                .cart__info-bottom.flex-wrap
+                                    .cart__info-bottom-item
+                                        p 20 сентября 2019
+                                        span Пятница 19:30
+                                    .cart__info-bottom-item
+                                        p Филиал ФКП "Росгосцирк" "Большой Санкт-Петербургский 
+                                        span 
+                                            strong Партер 
+                                            | Ряд 3, Место 45
+                        .cart__right
+                            .cart__price 3 500 ₽
+                            span Cервисный сбор 350 ₽
+                    li.cart__item.flex-wrap
+                        .i-close
+                        .cart__left.flex.aic
+                            .cart__img
+                                img(src="img/cart-img.png", alt="")
+                            .cart__info
+                                .cart__title Спектакль "Укрощение строптивой" и вариант довольно длинного заголовка
+                                .cart__info-bottom.flex-wrap
+                                    .cart__info-bottom-item
+                                        p 20 сентября 2019
+                                        span Пятница 19:30
+                                    .cart__info-bottom-item
+                                        p Газпром Арена
+                                        span 
+                                            strong Партер 
+                                            | Ряд 3, Место 45
+                        .cart__right
+                            .cart__price 3 500 ₽
+                            span Cервисный сбор 350 ₽ 
+                    li.cart__item.flex-wrap
+                        .i-close
+                        .cart__left.flex.aic
+                            .cart__img
+                                img(src="img/cart-img.png", alt="")
+                            .cart__info
+                                .cart__title «Звёзды Дорожного радио»
+                                .cart__info-bottom.flex-wrap
+                                    .cart__info-bottom-item
+                                        p 20 сентября 2019
+                                        span Пятница 19:30
+                                    .cart__info-bottom-item
+                                        p Газпром Арена
+                                        span 
+                                            strong Партер 
+                                            | Ряд 3, Место 45
+                        .cart__right
+                            .cart__price 3 500 ₽
+                            span Cервисный сбор 350 ₽ 
+                .cart__total.flex
+                    .cart__total-wrap.flex
+                        .cart__total-left
+                            p Итого:
+                        .cart__total-price
+                            p 10 500 ₽
+                            a(href="").js-open-promocode Есть промокод?
+                    .cart__promocode
+                        form(action="").form.flex
+                            .i-close.js-close-promocode
+                            .form__field
+                                input(type="text" name="promocode" required)
+                                .form__field-placeholder  Введите промокод
+                                .form__error Недопустимый формат
+                            button(type="submit").btn.btn-red Применить
+                .checkout
+                    .h1 Оформление заказа
+                    form(action="" method="").form.checkout__form.js-form-checkout
+                        .checkout__row.flex-wrap
+                            .checkout__col
+                                .checkout__title 1. Способ получения
+                                .form__radio   
+                                    label(for="1")
+                                        input(type="radio" id="1" name="checkout-get" checked)
+                                        .form__radio-btn
+                                        span Выкуп в кассе
+                                .form__radio   
+                                    label(for="2")
+                                        input(type="radio" id="2" name="checkout-get")
+                                        .form__radio-btn
+                                        span Электронный билет
+                                .checkout__info
+                                    .checkout__info-title Обратите внимание!
+                                    p Срок бронирования билетов ограничен до 24 часов. В течение данного времени заказ должен быть оплачен.
+                            .checkout__col
+                                .checkout__title 2. Способ оплаты
+                                .form__radio.disabled  
+                                    label(for="3")
+                                        input(type="radio" id="3" name="checkout-pay")
+                                        .form__radio-btn
+                                        span Банковской картой
+                                .form__radio.disabled   
+                                    label(for="4")
+                                        input(type="radio" id="4" name="checkout-pay")
+                                        .form__radio-btn
+                                        span Покупка в кредит
+                                .form__radio   
+                                    label(for="5")
+                                        input(type="radio" id="5" name="checkout-pay")
+                                        .form__radio-btn
+                                        span Наличный расчет 
+                            .checkout__col
+                                .checkout__title 3. Контактные данные
+                                .form__field
+                                    input(type="text" required name="name")
+                                    .form__field-placeholder Ваше имя
+                                        span *
+                                    .form__error Недопустимый формат
+                                .form__field
+                                    input(type="text" required name="email")
+                                    .form__field-placeholder Ваш e-mail
+                                        span *
+                                    .form__error Недопустимый формат
+                                .form__field
+                                    input(type="text" required data-phone name="phone")
+                                    .form__field-placeholder Ваш телефон
+                                        span *
+                                    .form__error Недопустимый формат
+                                button(type="submit").btn.btn-red Оформить заказ
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/main.js")

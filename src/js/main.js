@@ -673,58 +673,85 @@ $(document).ready(function () {
         let self = this;
         this.validate = function () {
             let validator = self.pattern.test(this.el.value);
-            console.log(validator);
             return validator;
         }
         this.getEl = function () {
-            console.log(self.el);
             return self.el;
         }
     }
     
-    $('.js-contacts-form').on('submit', function (e) {
-        e.preventDefault();
+    function validateForm() {
+        let errors = false; 
+        
+        var nameInp = new Fields('input[name="name"]', /.+/ig);
 
-        var nameInp = new Fields('.js-contacts-form input[name="name"]', /.+/ig);
+        var emailInp = new Fields('input[name="email"]', /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
-        var emailInp = new Fields('.js-contacts-form input[name="email"]', /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-
-        var phoneInp = new Fields('.js-contacts-form input[name="phone"]', /.{16,}/ig);
+        var phoneInp = new Fields('input[name="phone"]', /.{16}/ig);
 
         if (nameInp.validate() == false) {
-            var errors = 1;
+            errors = true;
             nameInp.getEl().classList.add('error');
         }
         else {
-            var errors = 0;
             nameInp.getEl().classList.remove('error');
         }
 
         if (emailInp.validate() == false) {
-            var errors = 1;
+            errors = true;
             emailInp.getEl().classList.add('error');
         }
         else {
-            var errors = 0;
             emailInp.getEl().classList.remove('error');
         }
 
         if (phoneInp.validate() == false) {
-            var errors = 1;
+            errors = true;
             phoneInp.getEl().classList.add('error');
         }
         else {
-            var errors = 0;
             phoneInp.getEl().classList.remove('error');
         }
-
-        if(errors > 0){
-            alert('ШАЛУН)))');
+        if (errors) {
+            console.log('fields error');
         }
-        else{
+        else {
             showPopupOk();
         }
-        console.log(errors);
+    }
+    $('.js-contacts-form').on('submit', function(e){
+        e.preventDefault();
+        validateForm();
+    });
+    $('.js-form-checkout').on('submit', function(e){
+        e.preventDefault();
+        validateForm();
     });
     /* validator end */
+
+    /* promocode */
+    function showPopupPromocode(){
+        $('.cart__promocode').fadeIn();
+    }
+    function closePopupPromocode(){
+        $('.cart__promocode').fadeOut();
+    }
+    $('body').on('click', closePopupPromocode);
+
+    $('.cart__promocode').on('click', function(e){
+        e.stopPropagation();
+        showPopupPromocode();
+    });
+
+    $('.js-open-promocode').on('click', function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        showPopupPromocode();
+    });
+    $('.js-close-promocode').on('click', function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        closePopupPromocode();
+    });
+    /* promocode end */
 });
