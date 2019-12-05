@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title ALLOSHOW
+        link(rel="stylesheet" href="style.css")
+    body
+        include blocks/_header
+        section.breadcrumbs
+            .container
+                ul.breadcrumbs__list.flex.aic
+                    li.breadcrumbs__item
+                        a(href="") Главная
+                    li.breadcrumbs__item
+                        a(href="") Кассы
+        section.cashbox
+            .container
+                .content
+                    h1 Кассы
+                ul.cashbox__list
+                    li.cashbox__item
+                        .cashbox__title Центральная касса
+                        a(href="tel:+7 (812) 375-25-25").cashbox__phone +7 (812) 375-25-25
+                        .cashbox__row.flex-wrap
+                            .cashbox__col
+                                .cashbox__col-title Адрес
+                                p Санкт-Петербург, Большая Морская ул. д.22
+                                a(href="").btn.btn-bordered Проложить маршрут
+                            .cashbox__col
+                                .cashbox__col-title Часы работы
+                                p с 9 до 20 часов в будние дни с 10 до 19 часов в праздничные и выходные дни
+                            .cashbox__col.cashbox__col--pay
+                                .cashbox__col-title Способ оплаты
+                                p Наличными Банковской картой
+                            .cashbox__col.cashbox__col--map
+                                .cashbox__map
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ef8efef378fd0d023d6b7edf696c620bf05ffd26502d2ea90f64245d77c750e&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
+                    li.cashbox__item
+                        .cashbox__title Центральная касса
+                        a(href="tel:+7 (812) 375-25-25").cashbox__phone +7 (812) 375-25-25
+                        .cashbox__row.flex-wrap
+                            .cashbox__col
+                                .cashbox__col-title Адрес
+                                p Санкт-Петербург, Большая Морская ул. д.22
+                                a(href="").btn.btn-bordered Проложить маршрут
+                            .cashbox__col
+                                .cashbox__col-title Часы работы
+                                p с 9 до 20 часов в будние дни с 10 до 19 часов в праздничные и выходные дни
+                            .cashbox__col.cashbox__col--pay
+                                .cashbox__col-title Способ оплаты
+                                p Наличными Банковской картой
+                            .cashbox__col.cashbox__col--map
+                                .cashbox__map
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ef8efef378fd0d023d6b7edf696c620bf05ffd26502d2ea90f64245d77c750e&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
+                    li.cashbox__item
+                        .cashbox__title Центральная касса
+                        a(href="tel:+7 (812) 375-25-25").cashbox__phone +7 (812) 375-25-25
+                        .cashbox__row.flex-wrap
+                            .cashbox__col
+                                .cashbox__col-title Адрес
+                                p Санкт-Петербург, Большая Морская ул. д.22
+                                a(href="").btn.btn-bordered Проложить маршрут
+                            .cashbox__col
+                                .cashbox__col-title Часы работы
+                                p с 9 до 20 часов в будние дни с 10 до 19 часов в праздничные и выходные дни
+                            .cashbox__col.cashbox__col--pay
+                                .cashbox__col-title Способ оплаты
+                                p Наличными Банковской картой
+                            .cashbox__col.cashbox__col--map
+                                .cashbox__map
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ef8efef378fd0d023d6b7edf696c620bf05ffd26502d2ea90f64245d77c750e&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
+                    
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/main.js")

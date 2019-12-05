@@ -17,35 +17,52 @@ html(lang="en")
                         a(href="") Контакты
         section.contacts
             .container
-                h1 Контакты
+                .content
+                    h1 Контакты
                 .contacts__row.flex-wrap
                     .contacts__col.contacts__col--form
-                        form(action="").form
+                        form(action="").form.js-contacts-form
                             .form__title Свяжитесь с нами
                             .form__field
-                                input(type="text" required)
+                                input(type="text" required name="name")
                                 .form__field-placeholder Ваше имя
                                     span *
-                                .form__error
+                                .form__error Недопустимый формат
                             .form__field
-                                input(type="text" required)
+                                input(type="text" required name="email")
                                 .form__field-placeholder Ваш e-mail
                                     span *
-                                .form__error
+                                .form__error Недопустимый формат
                             .form__field
-                                input(type="text" required)
+                                input(type="text" required data-phone name="phone")
                                 .form__field-placeholder Ваш телефон
                                     span *
-                                .form__error
+                                .form__error Недопустимый формат
                             .form__field
                                 textarea
                                 .form__field-placeholder Комментарий
                                     span *
-                                .form__error
                             button(type="submit").btn.btn-green Отправить
                             .form__privacy Нажимая кнопку «Отправить» вы соглашаетесь с 
                                 a(href="") политикой конфиденциальности
                     .contacts__col.contacts__col--map
+                        .contacts__map
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ef8efef378fd0d023d6b7edf696c620bf05ffd26502d2ea90f64245d77c750e&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
+                            .contacts__info
+                                .contacts__info-title ООО «АЛЛОШОУ»
+                                ul.contacts__info-list
+                                    li.contacts__info-item
+                                        span Наш call-центр:
+                                        a(href="tel:+7 (812) 375-25-25") +7 (812) 375-25-25
+                                    li.contacts__info-item
+                                        span Для общих вопросов и вопросам по контенту:
+                                        a(href="mailto:info@alloshow.ru") info@alloshow.ru
+                                    li.contacts__info-item
+                                        span Адрес
+                                        p 196084, Санкт-Петербург, Московский пр. 97А, офис 401
+                                    li.contacts__info-item
+                                        span Часы работы
+                                        p <strong>пн-пт:</strong> 9:00 - 20:00<br><strong>сб-вс:</strong>  10:00 - 19:00
         include blocks/_footer
         include blocks/_popup
         script(src="js/jquery.min.js")

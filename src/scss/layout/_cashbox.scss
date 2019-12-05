@@ -1,0 +1,71 @@
+.cashbox{
+    &__list{
+        max-width: 100%;
+    }
+    &__item{
+        padding: 32px 0 32px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);    
+        &:first-child{
+            padding-top: 0;
+        }
+    }
+    &__title{
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 27px;
+        margin-bottom: 12px; 
+    }
+    &__phone{
+        color: #000000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;     
+    }
+    &__row{
+        margin: 24px -15px 0;
+    }
+    &__col{
+        padding: 0 15px;
+        width: 25%;
+        @include media(1000){
+            width: 33.33%;
+        }
+        &--pay{
+            @include col(2);
+        }
+        &--map{
+            @include col(4);
+            @include media(1000){
+                width: 100%;
+                margin-bottom: 24px;
+                order: -1;
+            }
+        }
+        &-title{
+            color: #c80a09;
+            font-weight: 700;
+            line-height: 27px;     
+            font-size: 16px;  
+            margin-bottom: 12px;
+        }
+        p{
+            color: #333333;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            line-height: 26px; 
+            max-width: 250px;    
+        }
+        a{
+            margin-top: 20px;
+        }
+    }
+    &__map{
+        iframe{
+            max-width: 100%;
+            height:200px;
+            @include media(1000){
+                height: 300px;
+            }
+        }
+    }
+}

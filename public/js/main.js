@@ -644,14 +644,14 @@ $(document).ready(function () {
     /* event gallery end */
 
     /* timer */
-    function timer() {
+    /* function timer() {
         var nowDate = new Date();
         var achiveDate = new Date('2019,12,10');
-        var result = (achiveDate - nowDate)+1000;
-        var seconds = Math.floor((result/1000)%60);
-        var minutes = Math.floor((result/1000/60)%60);
-        var hours = Math.floor((result/1000/60/60)%24);
-        var days = Math.floor(result/1000/60/60/24);
+        var result = (achiveDate - nowDate) + 1000;
+        var seconds = Math.floor((result / 1000) % 60);
+        var minutes = Math.floor((result / 1000 / 60) % 60);
+        var hours = Math.floor((result / 1000 / 60 / 60) % 24);
+        var days = Math.floor(result / 1000 / 60 / 60 / 24);
         if (seconds < 10) seconds = '0' + seconds;
         if (minutes < 10) minutes = '0' + minutes;
         if (hours < 10) hours = '0' + hours;
@@ -663,6 +663,68 @@ $(document).ready(function () {
         elMinutes.innerHTML = minutes;
         setTimeout(timer, 1000);
     }
-    timer();
+    timer(); */
     /* timer end */
+
+    /* validator */
+    function Fields(el, pattern) {
+        this.el = document.querySelector(el);
+        this.pattern = pattern;
+        let self = this;
+        this.validate = function () {
+            let validator = self.pattern.test(this.el.value);
+            console.log(validator);
+            return validator;
+        }
+        this.getEl = function () {
+            console.log(self.el);
+            return self.el;
+        }
+    }
+    
+    $('.js-contacts-form').on('submit', function (e) {
+        e.preventDefault();
+
+        var nameInp = new Fields('.js-contacts-form input[name="name"]', /.+/ig);
+
+        var emailInp = new Fields('.js-contacts-form input[name="email"]', /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+
+        var phoneInp = new Fields('.js-contacts-form input[name="phone"]', /.{16,}/ig);
+
+        if (nameInp.validate() == false) {
+            var errors = 1;
+            nameInp.getEl().classList.add('error');
+        }
+        else {
+            var errors = 0;
+            nameInp.getEl().classList.remove('error');
+        }
+
+        if (emailInp.validate() == false) {
+            var errors = 1;
+            emailInp.getEl().classList.add('error');
+        }
+        else {
+            var errors = 0;
+            emailInp.getEl().classList.remove('error');
+        }
+
+        if (phoneInp.validate() == false) {
+            var errors = 1;
+            phoneInp.getEl().classList.add('error');
+        }
+        else {
+            var errors = 0;
+            phoneInp.getEl().classList.remove('error');
+        }
+
+        if(errors > 0){
+            alert('ШАЛУН)))');
+        }
+        else{
+            showPopupOk();
+        }
+        console.log(errors);
+    });
+    /* validator end */
 });

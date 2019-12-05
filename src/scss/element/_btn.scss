@@ -1,11 +1,24 @@
 .btn{
-    display: inline-flex !important;
+    display: flex;
     align-items: center;
     justify-content: center;
     transition: .3s;
     cursor: pointer;
     margin-bottom: 0 !important;
     text-decoration: none !important;
+    text-align: center;
+    &-bordered{
+        border-radius: 25px;
+        border: 1px solid #c80a09; 
+        color: #c80a09;     
+        background: transparent;
+        max-width: 190px;
+        height: 42px;
+        &:hover{
+            background-color: #e30301;
+            color: white;
+        }
+    }
     &-red{
         max-width: 135px;
         width: 100%;

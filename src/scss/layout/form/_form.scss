@@ -1,0 +1,87 @@
+.form{
+    &__error{
+        display: none;
+        position: absolute;
+        top: 105%;
+        color: #c80a09;
+        font-size: 11px;
+        letter-spacing: 0.64px;
+    }
+    &__title{
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 34px;
+    }
+    &__field{
+        position: relative;
+        margin-bottom: 50px;
+        input,textarea{
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid #cbcbcb;
+            background: transparent;
+            padding-bottom: 6px;   
+            line-height: normal;
+            display: block;
+            height: 30px;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        input{
+            &.error{
+                border-bottom: 1px solid #c80a09;  
+                ~.form__error{
+                    display: block;
+                }
+            }
+        }
+        textarea{ 
+            resize: none;
+        }
+        input:focus, input:not(:focus):valid,textarea:focus{
+            +.form__field-placeholder{
+                color: #929292;
+                font-size: 11px;
+                letter-spacing: 0.39px;
+                bottom: 100%;
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        &-placeholder{
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            pointer-events: none;
+            transition: .3s;
+            span{
+                color: #ab0709;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 0.43px;     
+                display: inline-block; 
+                margin-left: 6px;  
+            }
+        }
+    }
+    button{
+        margin-top: -20px;
+    }
+    &__privacy{
+        color: #525256;
+        font-size: 12px;
+        letter-spacing: 0.55px;
+        line-height: 17px;
+        margin-top: 16px;
+        a{
+            text-decoration: underline;
+            color: #525256;
+        }
+    }
+}

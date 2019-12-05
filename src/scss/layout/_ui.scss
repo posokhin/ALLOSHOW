@@ -1,3 +1,48 @@
+.h1,.h2,.h3,.h4,.h5,.h6{
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    &.red{
+        color: #c80a09;     
+    }
+}
+.h1{
+    color: #000000;
+    font-size: 32px;
+    line-height: 35px;    
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.h2{
+    font-size: 28px;
+    line-height: 29px;    
+}
+.h3{
+    font-size: 24px;
+    line-height: 28px;   
+}
+.h4{
+    font-size: 21px;
+    line-height: 27px;
+}
+.h5{
+    font-size: 18px;
+    line-height: 23px;
+}
+.h6{
+    font-size: 16px;
+    line-height: 20px;
+}
+.p{
+    color: #333333;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 26px;   
+    margin-bottom: 20px;
+    max-width: 870px;
+}
+
 .content{
     p{
         color: #333333;
@@ -8,6 +53,8 @@
         max-width: 870px;
     }
     ul{
+        max-width: 870px;
+        margin-bottom: 60px;
         li{
             color: #333333;
             font-size: 16px;
@@ -18,11 +65,12 @@
     }
     ul.circle{
         li{
+            line-height: 24px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             .num{
                 margin-right: 24px;  
-                width: 32px;
+                min-width: 32px;
                 height: 32px;
                 box-shadow: 0 2px 14px rgba(200, 10, 9, 0.23);
                 border: 2px solid #c80a09;
@@ -35,6 +83,9 @@
                 font-size: 16px;
                 font-weight: 500;
                 letter-spacing: 0.5px;
+            }
+            span{
+                margin-top: 4px;
             }
         }
     }
@@ -53,17 +104,24 @@
             }
         }
     }
-    h1,h2,h3,h4,h5,h6{
+    h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
         margin: 0;
         margin-bottom: 16px;
+        font-weight: bold;
         &.red{
             color: #c80a09;     
         }
+    }
+    h2,h3,h4,h5,h6{
+        margin-top: 32px;
     }
     h1,.h1{
         color: #000000;
         font-size: 32px;
         line-height: 35px;    
+        padding-bottom: 24px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
     h2,.h2{
         font-size: 28px;
@@ -96,6 +154,10 @@
         margin-bottom: 16px;
         &:hover{
             color: #a70504;     
+        }
+        &.btn{
+            font-weight: 400;
+            display: inline-flex;
         }
     }
 }
