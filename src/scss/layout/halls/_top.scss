@@ -1,0 +1,12 @@
+.halls{
+    &__top{
+        margin-bottom: 40px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        h1{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.faq{
+    &__row{
+        padding: 20px 0 70px;
+        align-items: flex-start;
+    }
+    &__tabs{
+        &-content{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+    }
+    &__item{
+        padding: 24px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        &:first-child{
+            padding-top: 0;
+        }
+        &.active{
+            .faq__text{
+                display: block;
+            }
+            .faq__btn{
+                box-shadow: 0 2px 14px rgba(200, 10, 9, 0.23);
+                background-color: #c80a09;
+                &::before{
+                    background: white;
+                }
+                &::after{
+                    opacity: 0;
+                }
+            }
+            .faq__title{
+                color: #c80a09;     
+            }
+        }
+    }
+    &__top{
+        cursor: pointer;
+
+    }
+    &__title{
+        color: #333333;
+        font-size: 17px;
+        line-height: 26px;      
+        @include media(920){
+            font-size: 16px;
+        }
+    }
+    &__btn{
+        min-width: 24px;
+        max-width: 24px;
+        height: 24px;
+        box-shadow: 0 5px 24px rgba(0, 0, 0, 0.08);
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-right: 18px;
+        transition: .3s;
+        &::before,&::after{
+            position: absolute;
+            content: "";
+            display: block;
+            width: 10px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: #c80a09;
+            transition: .3s;
+        }   
+        &::after{
+            transform: rotate(90deg);
+        }
+        
+    }
+    &__text{
+        display: none;
+        margin-top: 16px;
+        padding-left: 42px;
+        p{
+            color: #333333;
+            letter-spacing: 0.44px;
+            line-height: 26px;    
+            margin-bottom: 24px;  
+        }
+        a{
+            color: #c80a09;
+            font-weight: 500;       
+        }
+        ul{
+            list-style: disc;
+            list-style-position: inside;
+            color: #333333;
+            letter-spacing: 0.44px;
+            line-height: 20px;
+            li{
+                margin-bottom: 16px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

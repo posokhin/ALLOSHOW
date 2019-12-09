@@ -643,29 +643,6 @@ $(document).ready(function () {
     });
     /* event gallery end */
 
-    /* timer */
-    /* function timer() {
-        var nowDate = new Date();
-        var achiveDate = new Date('2019,12,10');
-        var result = (achiveDate - nowDate) + 1000;
-        var seconds = Math.floor((result / 1000) % 60);
-        var minutes = Math.floor((result / 1000 / 60) % 60);
-        var hours = Math.floor((result / 1000 / 60 / 60) % 24);
-        var days = Math.floor(result / 1000 / 60 / 60 / 24);
-        if (seconds < 10) seconds = '0' + seconds;
-        if (minutes < 10) minutes = '0' + minutes;
-        if (hours < 10) hours = '0' + hours;
-        var elDays = document.querySelector('.event__short-timer-item--days p');
-        var elHours = document.querySelector('.event__short-timer-item--hours p');
-        var elMinutes = document.querySelector('.event__short-timer-item--minutes p');
-        elDays.innerHTML = days;
-        elHours.innerHTML = hours;
-        elMinutes.innerHTML = minutes;
-        setTimeout(timer, 1000);
-    }
-    timer(); */
-    /* timer end */
-
     /* validator */
     function Fields(el, pattern) {
         this.el = document.querySelector(el);
@@ -754,4 +731,33 @@ $(document).ready(function () {
         closePopupPromocode();
     });
     /* promocode end */
+
+    /* faq */
+    $('.faq__tabs').on('click', '.faq__tabs-item:not(.faq__tabs-item.active)', function() {
+        $(this).addClass('active').siblings().removeClass('active').closest('.faq__row').find('.faq__tabs-content').removeClass('active').animate({
+            opacity: 0
+        },300).eq($(this).index()).addClass('active').animate({
+            opacity: 1
+        },300);
+        
+        let activePos = $('.faq__tabs-item.active').position().top;
+        let lineHeight = $('.sidebar .line').height();
+        console.log(activePos);
+        $('.sidebar .line').animate({
+            top: activePos + (lineHeight/4) + 'px'
+        });
+    });
+
+    $('.faq__top').on('click', function(){
+        $(this).siblings().slideToggle(300).closest('.faq__item').toggleClass('active').siblings().find('.faq__text').slideUp(300).closest('.faq__item').removeClass('active');
+    });
+    /* faq end */
+
+
+    /* select */
+    $('.select__item-current').on('click', function(){
+        $(this).parent().toggleClass('open')
+        $('.select__item-current').find()
+    });
+    /* select end */
 });

@@ -44,6 +44,26 @@
 }
 
 .content{
+    &__row{
+        margin: 0 -15px;
+    }
+    &__col{
+        padding: 0 15px;
+        &--left{
+            @include col(3);
+            padding-left: 30px;
+            @include media(920){
+                width: 30%;
+            }
+        }
+        &--right{
+            @include col(8);
+            margin-left: auto;
+            @include media(920){
+                width: 70%;
+            }
+        }
+    }
     p{
         color: #333333;
         font-size: 16px;

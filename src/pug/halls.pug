@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title ALLOSHOW
+        link(rel="stylesheet", href="style.css")
+    body
+        include blocks/_header
+        section.breadcrumbs
+            .container
+                ul.breadcrumbs__list.flex.aic
+                    li.breadcrumbs__item
+                        a(href="") Главная
+                    li.breadcrumbs__item
+                        a(href="") Места проведения
+        section.halls
+            .container
+                .halls__top.flex.aic.jcsb
+                    .content 
+                        h1 Места проведения
+                    .select
+                        .select__item
+                            .select__item-current.flex.aic
+                                span Все типы
+                                i.i-arrow.i-arrow--down
+                                ul.select__sublist
+                                    li.select__sublist-item
+                                        a(href="") Все города
+                                    li.select__sublist-item
+                                        a(href="") Санкт-Петербург
+                                    li.select__sublist-item
+                                        a(href="") Москва
+                                    li.select__sublist-item
+                                        a(href="") Иркутск
+                                    li.select__sublist-item
+                                        a(href="") Новосибирск
+                        .select__item
+                            .select__item-current.flex.aic
+                                span Все типы
+                                i.i-arrow.i-arrow--down
+                                ul.select__sublist
+                                    li.select__sublist-item
+                                        a(href="") Все города
+                                    li.select__sublist-item
+                                        a(href="") Санкт-Петербург
+                                    li.select__sublist-item
+                                        a(href="") Москва
+                                    li.select__sublist-item
+                                        a(href="") Иркутск
+                                    li.select__sublist-item
+                                        a(href="") Новосибирск
+                ul.halls__list.flex-wrap
+                    -for(var i = 0; i < 6; i++)
+                        li.halls__item
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/1.png", alt="")
+                                .halls__content
+                                    .halls__title Концертно-спортивный комплекс «Тинькофф Арена»
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/2.png", alt="")
+                                .halls__content
+                                    .halls__title Александринский театр
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/3.png", alt="")
+                                .halls__content
+                                    .halls__title БКЗ Октябрьский
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/4.png", alt="")
+                                .halls__content
+                                    .halls__title Большой Итальянский просвет Государственного Эрмитажа
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+        include blocks/_pagination
+        include blocks/_seo-text
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/lightgallery-all.min.js")
+        script(src="js/main.js")
