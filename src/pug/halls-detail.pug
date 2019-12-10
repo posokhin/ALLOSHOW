@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title ALLOSHOW
+        link(rel="stylesheet", href="style.css")
+    body
+        include blocks/_header
+        section.halls-detail.event
+            .event__top
+                .event__slider.swiper-container.js-slider-event
+                    ul.event__slider-list.swiper-wrapper
+                        li.event__slider-item.swiper-slide
+                            img(src="img/event-2.png", alt="")
+                        li.event__slider-item.swiper-slide
+                            img(src="img/event-2.png", alt="")
+                        li.event__slider-item.swiper-slide
+                            video(autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" controls="controls")
+                                source(src="video/2-mp4.mp4", type="video/mp4")
+                .event__data
+                    .container
+                        .event__data-wrapper
+                            .event__tags.flex.aic
+                                .event__tags-item 
+                                    a(href="") театр
+                            .event__slider-nav
+                                .event__slider-nav-item.event__slider-nav-item--prev
+                                    i.i-ARROW
+                                .event__slider-nav-item.event__slider-nav-item--next
+                                    i.i-ARROW
+                            .event__data-title.flex.aic.jcsb
+                                h1 Драматический театр имени В. Ф. Комиссаржевской
+                                span Спектакль «Женщина-змея»
+            section.breadcrumbs
+                .container
+                    ul.breadcrumbs__list.flex.aic
+                        li.breadcrumbs__item
+                            a(href="") Главная
+                        li.breadcrumbs__item
+                            a(href="") Афиша событий
+                        li.breadcrumbs__item
+                            a(href="") Балет «Лебединое озеро» (СПб Театр балета им. П.И.Чайковского)
+            section.event__content
+                .container
+                    .event__content-row.flex-wrap
+                        .event__desc
+                            h2 О зале
+                            .event__desc-text
+                                .event__desc-text-wrap
+                                    p «Лебединое озеро» – одно из самых фантастических и совершенных творений мирового искусства и самый известный балет в мире. Его хореография уже на протяжении долгого времени считается общепризнанным шедевром мирового балета, одним из ярчайших достижений русской национальной культуры
+                                    p «Лебединое озеро» – одно из самых фантастических и совершенных творений мирового искусства и самый известный балет в мире. Его хореография уже на протяжении долгого времени считается общепризнанным шедевром мирового балета, одним из ярчайших достижений русской национальной культуры
+                                a(href="").js-open-event-desc-text Читать далее
+                            .event__desc-social
+                                span Поделиться: 
+                                ul.event__desc-social-list
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-telegram
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-viber
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-message
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-whats
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-vk-rounded
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-ok
+                                    li.event__desc-social-item
+                                        a(href="") 
+                                            i.i-fb-rounded
+                        .event__short.event__short--halls
+                            .halls__short  
+                                a(href="") 
+                                    .halls__short-img
+                                        img(src="img/halls/short.png", alt="")
+                                    .halls__short-content.flex.aic
+                                        .halls__short-content-left
+                                            i.i-event-gallery
+                                        .halls__short-content-right
+                                            p Галерея зала
+                                            span СМОТРЕТЬ 
+                                                i.i-ARROW
+                        .event__contacts#event-map
+                            h2 Адрес
+                            .event__contacts-map
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8d649037a980226086e7de301ab776e7fe1c91da7edf29b93cd61a74014027e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                            .event__contacts-info.flex.aic.jcsb
+                                .event__contacts-info-left
+                                    p.event__contacts-info-place Драматический театр имени В. Ф. Комиссаржевской
+                                    p.event__contacts-info-address г. Санкт-Петербург, ул.Большая Итальянская, д. 19
+                                a(href="").btn.btn-green Проложить маршрут
+                        .events__top.flex-wrap.jcsb.aic
+                            h2.events__top-title Афиша на ближайшие дни
+                            .events__top-find Найдено: 385 событий
+                        include blocks/_events-list
+        include blocks/_pagination
+        section.slider-recommend
+            .container
+                .slider-top
+                    .slider-top__title
+                        p ALLOSHOW РЕКОМЕНДУЕТ
+                        h2 Рекоммендуем посетить
+                    .slider-top__nav
+                        .slider-top__nav-item.slider-top__nav-item-prev
+                            i.i-ARROW.i-ARROW-left
+                        .slider-top__nav-item.slider-top__nav-item-next
+                            i.i-ARROW 
+                .slider-type-recommend.swiper-container.js-slider-recommend
+                    ul.slider-type-recommend-list.swiper-wrapper
+                        li.halls__item.swiper-slide
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/1.png", alt="")
+                                .halls__content
+                                    .halls__title Концертно-спортивный комплекс «Тинькофф Арена»
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item.swiper-slide
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/2.png", alt="")
+                                .halls__content
+                                    .halls__title Александринский театр
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item.swiper-slide
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/3.png", alt="")
+                                .halls__content
+                                    .halls__title БКЗ Октябрьский
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item.swiper-slide
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/4.png", alt="")
+                                .halls__content
+                                    .halls__title Большой Итальянский просвет Государственного Эрмитажа
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item.swiper-slide
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/1.png", alt="")
+                                .halls__content
+                                    .halls__title Концертно-спортивный комплекс «Тинькофф Арена»
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item.swiper-slide
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/2.png", alt="")
+                                .halls__content
+                                    .halls__title Александринский театр
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item.swiper-slide
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/3.png", alt="")
+                                .halls__content
+                                    .halls__title БКЗ Октябрьский
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+                        li.halls__item.swiper-slide
+                            a(href="").halls__link
+                                .halls__img
+                                    img(src="img/halls/4.png", alt="")
+                                .halls__content
+                                    .halls__title Большой Итальянский просвет Государственного Эрмитажа
+                                    .halls__place г. Санкт-Петербург, Приморский пр., 80/1
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/lightgallery-all.min.js")
+        script(src="js/main.js")

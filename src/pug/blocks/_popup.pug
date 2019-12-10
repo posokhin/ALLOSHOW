@@ -30,3 +30,80 @@
             .popup-ok__item-time с 10 до 19 часов
             .popup-ok__item-character в праздничные и выходные дни.
     a(href="").btn.btn-green.popup-ok-btn.js-close-popup ОК
+.popup.popup-auth
+    .i-close
+    .popup-auth__top
+        .popup__switch.flex.aic
+            .popup__switch-item.active Авторизация
+            .popup__switch-item Регистрация
+        form(action="").form.personal__form.js-contacts-form.active
+            .form__field
+                input(type="text" required name="name")
+                .form__field-placeholder Ваше имя
+                    span *
+                .form__error Недопустимый формат
+            .form__field
+                input(type="text" required data-phone name="phone")
+                .form__field-placeholder Ваш телефон
+                    span *
+                .form__error Недопустимый формат
+            .form__field
+                input(type="text" required name="email")
+                .form__field-placeholder Ваш e-mail
+                    span *
+                .form__error Недопустимый формат
+            .form__field
+                input(type="text" required name="email")
+                .form__field-placeholder Пароль
+                    span *
+                .form__error Недопустимый формат
+            .form__checkbox
+                input(type="checkbox" id="check" name="subscribe")
+                label(for="check")
+                    .form__checkbox-btn
+                        i.i-check
+                    span Подписаться на новостную рассылку
+            .form__checkbox
+                input(type="checkbox" id="check-privacy" name="subscribe")
+                label(for="check-privacy")
+                    .form__checkbox-btn
+                        i.i-check
+                    span Я согласен с 
+                        a(href="") правилами заказа билетов
+            button(type="submit").btn.btn-red Войти
+        form(action="").form.personal__form.js-contacts-form
+            .form__field
+                input(type="text" required name="email")
+                .form__field-placeholder Ваш e-mail
+                    span *
+                .form__error Недопустимый формат
+            .form__field
+                input(type="text" required name="email")
+                .form__field-placeholder Пароль
+                    span *
+                .form__error Недопустимый формат
+            .form__checkbox.flex.aic.jcsb
+                input(type="checkbox" id="check-remember" name="subscribe")
+                label(for="check-remember")
+                    .form__checkbox-btn
+                        i.i-check
+                    span Запомнить меня
+                a(href="") Забыли пароль?
+            button(type="submit").btn.btn-red Войти
+    .popup__social
+        .popup__social-title Зарегистрироваться, используя аккаунт
+        ul.popup__social-list.flex.aic
+            li 
+                a(href="")
+                    i.i-goggle
+            li 
+                a(href="")
+                    i.i-yandex
+            li 
+                a(href="")
+                    i.i-facebook
+            li 
+                a(href="")
+                    i.i-vk--red
+            li 
+                a(href="") все

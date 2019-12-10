@@ -1,0 +1,96 @@
+.orders{
+    &__item{
+        margin-bottom: 16px;
+        padding: 32px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @include media(1120){
+            justify-content: space-between;
+        }
+    }
+    &__col{
+        &:first-child{
+            width: 20%;
+            padding-right: 32px;
+            @include media(1120){
+                width: 100%;
+                margin-bottom: 24px;
+                padding: 0;       
+            }
+        }
+        &:nth-child(2){
+            border-left: 2px solid #f1f2f5;
+            border-right: 2px solid #f1f2f5;
+            padding: 0 32px;
+            @include media(1120){
+                border: 0;
+                padding: 0;
+                padding-right: 15px;
+            }
+            @include media(1000){
+                padding: 0;
+                margin-bottom: 24px;
+            }
+        }
+        &:last-child{
+            padding-left: 32px;
+            @include media(1120){
+                padding: 0;
+                padding-left: 15px;
+            }
+            @include media(1000){
+                padding: 0;
+            }
+        }
+        width: 40%;
+        @include media(1120){
+            width: 50%;
+        }
+        @include media(1000){
+            width: 100%;
+        }
+        &-inner{
+            margin-bottom: 12px;
+            .orders__subtitle{
+                width: 60%;
+                @include media(1000){
+                    width: 50%;
+                }  
+            }
+            &--w50{
+                margin: 0;
+                .orders__subtitle{
+                    width: 100%;
+                    margin-bottom: 12px; 
+                    @include media(1000){
+                        width: auto;
+                    }  
+                }
+                @include media(1120){
+                    width: 50%;
+                }
+            }
+        }
+    }
+    &__number{
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.21px;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+    &__status{
+        color: #c80a09;
+        letter-spacing: 0.17px;
+    }
+    &__subtitle{
+        color: #989898;
+        letter-spacing: 0.17px;     
+    }
+    &__value{
+        letter-spacing: 0.17px;
+    }
+}

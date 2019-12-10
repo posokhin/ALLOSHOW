@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title ALLOSHOW
+        link(rel="stylesheet" href="style.css")
+    body
+        include blocks/_header
+        section.breadcrumbs
+            .container
+                ul.breadcrumbs__list.flex.aic
+                    li.breadcrumbs__item
+                        a(href="") Главная
+                    li.breadcrumbs__item
+                        a(href="") Личный кабинет
+                    li.breadcrumbs__item
+                        a(href="") Мои заказы
+        section.personal
+            .container
+                .content 
+                    h1 Мои заказы
+                .content__row.flex-wrap.faq__row
+                    aside.sidebar.content__col.content__col--left   
+                        .line 
+                        ul.sidebar__list.faq__tabs
+                            li.sidebar__item.faq__tabs-item.active 
+                                a(href="") Мои заказы
+                            li.sidebar__item.faq__tabs-item
+                                a(href="") Мои данные
+                            li.sidebar__item.faq__tabs-item 
+                                a(href="") Выход
+                    .content__col.content__col--right.content__col--personal
+                        .orders
+                            ul.orders__list
+                                -for(var i = 0; i < 4; i+=1)
+                                    li.orders__item.flex-wrap
+                                        .orders__col
+                                            .orders__number Заказ № 857930
+                                            .orders__status Заказ оформляется
+                                        .orders__col
+                                            .orders__row.flex.jcsb
+                                                .orders__col-inner.orders__col-inner--w50
+                                                    .orders__subtitle Количество билетов:
+                                                    .orders__value 2 шт
+                                                .orders__col-inner.orders__col-inner--w50
+                                                    .orders__subtitle Сумма заказа:
+                                                    .orders__value 4 200 ₽
+                                        .orders__col
+                                            .orders__col-inner.flex.aic
+                                                .orders__subtitle Оформлен:
+                                                .orders__value 05.08.2019
+                                            .orders__col-inner.flex.aic
+                                                .orders__subtitle Действителен до:
+                                                .orders__value 05.08.2019 16:11
+        include blocks/_slider-skip.pug
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/main.js")

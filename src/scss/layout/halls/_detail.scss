@@ -1,0 +1,12 @@
+.halls{
+    &-detail{
+        padding-bottom: 0;
+        background: #f1f2f5;
+        .events__top{
+            margin: 64px 0 34px;
+        }
+        .event__desc{
+            margin: 0;
+        }
+    }
+}

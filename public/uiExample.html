@@ -153,7 +153,7 @@
             </form>
           </div>
         </div>
-        <div class="header__middle-right flex"><a class="header__middle-login" href="">Войти</a><a class="header__middle-cart" href="">Корзина</a></div>
+        <div class="header__middle-right flex"><a class="header__middle-login js-auth" href="">Войти</a><a class="header__middle-cart" href="">Корзина</a></div>
       </div>
       <div class="header__bottom">
         <ul class="header__bottom-list flex aic">
@@ -361,6 +361,79 @@
           <div class="popup-ok__item-character">в праздничные и выходные дни.</div>
         </li>
       </ul><a class="btn btn-green popup-ok-btn js-close-popup" href="">ОК</a>
+    </div>
+    <div class="popup popup-auth">
+      <div class="i-close"></div>
+      <div class="popup-auth__top">
+        <div class="popup__switch flex aic">
+          <div class="popup__switch-item active">Авторизация</div>
+          <div class="popup__switch-item">Регистрация</div>
+        </div>
+        <form class="form personal__form js-contacts-form active" action="">
+          <div class="form__field">
+            <input type="text" required="required" name="name"/>
+            <div class="form__field-placeholder">Ваше имя<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__field">
+            <input type="text" required="required" data-phone="data-phone" name="phone"/>
+            <div class="form__field-placeholder">Ваш телефон<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__field">
+            <input type="text" required="required" name="email"/>
+            <div class="form__field-placeholder">Ваш e-mail<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__field">
+            <input type="text" required="required" name="email"/>
+            <div class="form__field-placeholder">Пароль<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__checkbox">
+            <input type="checkbox" id="check" name="subscribe"/>
+            <label for="check">
+              <div class="form__checkbox-btn"><i class="i-check"></i></div><span>Подписаться на новостную рассылку</span>
+            </label>
+          </div>
+          <div class="form__checkbox">
+            <input type="checkbox" id="check-privacy" name="subscribe"/>
+            <label for="check-privacy">
+              <div class="form__checkbox-btn"><i class="i-check"></i></div><span>Я согласен с <a href="">правилами заказа билетов</a></span>
+            </label>
+          </div>
+          <button class="btn btn-red" type="submit">Войти</button>
+        </form>
+        <form class="form personal__form js-contacts-form" action="">
+          <div class="form__field">
+            <input type="text" required="required" name="email"/>
+            <div class="form__field-placeholder">Ваш e-mail<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__field">
+            <input type="text" required="required" name="email"/>
+            <div class="form__field-placeholder">Пароль<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__checkbox flex aic jcsb">
+            <input type="checkbox" id="check-remember" name="subscribe"/>
+            <label for="check-remember">
+              <div class="form__checkbox-btn"><i class="i-check"></i></div><span>Запомнить меня</span>
+            </label><a href="">Забыли пароль?</a>
+          </div>
+          <button class="btn btn-red" type="submit">Войти</button>
+        </form>
+      </div>
+      <div class="popup__social">
+        <div class="popup__social-title">Зарегистрироваться, используя аккаунт</div>
+        <ul class="popup__social-list flex aic">
+          <li> <a href=""><i class="i-goggle"></i></a></li>
+          <li> <a href=""><i class="i-yandex"></i></a></li>
+          <li> <a href=""><i class="i-facebook"></i></a></li>
+          <li> <a href=""><i class="i-vk--red"></i></a></li>
+          <li> <a href="">все</a></li>
+        </ul>
+      </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/imask.min.js"></script>

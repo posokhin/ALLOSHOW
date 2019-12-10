@@ -1,7 +1,13 @@
 .events{
     &__top{
+        width: 100%;
         padding: 20px 0;
         border-bottom: 1px solid rgba(0,0,0,.05);
+        &-title{
+            color: #000000;
+            font-size: 32px !important;
+            margin: 0 !important;    
+        }
         &-find{
             opacity: 0.54;
             color: #000000;

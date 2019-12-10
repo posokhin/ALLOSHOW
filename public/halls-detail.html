@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>ALLOSHOW</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top flex aic">
+        <div class="header__top-geo"> <a class="flex aic js-open-popup-city" href=""><i class="i-geo"></i><span>Санкт-Петербург</span></a></div>
+        <ul class="header__top-list flex-wrap">
+          <li class="header__top-item"><a href="">Кассы</a></li>
+          <li class="header__top-item"><a href="">Залы</a></li>
+          <li class="header__top-item"><a href="">Оплата</a></li>
+          <li class="header__top-item"><a href="">Акции </a></li>
+        </ul>
+        <div class="header__top-phone flex-wrap aic"><a class="header__top-phone-tel" href="tel:+7 (812) 375-25-25">+7 (812) 375-25-25</a><a class="header__top-phone-call js-open-popup-call" href="">Обратный звонок</a></div>
+      </div>
+      <div class="header__middle flex">
+        <div class="m-menu-btn"><span></span><span></span><span></span></div>
+        <div class="m-menu">
+          <div class="m-menu__geo">
+            <div class="m-menu__geo-title flex aic">
+              <div class="m-menu__geo-title-txt flex aic"><i class="i-geo"></i>
+                <p>Санкт-Петербург</p>
+              </div>
+              <div class="m-menu-arrow"><img src="img/ico/arrow-red.svg" alt=""/></div>
+            </div>
+            <ul class="m-menu__geo-list">
+              <li class="m-menu__geo-list-item"><a class="m-menu__geo-list-item-link" href="">Москва</a></li>
+              <li class="m-menu__geo-list-item"><a class="m-menu__geo-list-item-link" href="">Санкт-Петербург</a></li>
+              <li class="m-menu__geo-list-item"><a class="m-menu__geo-list-item-link" href="">Пермь</a></li>
+              <li class="m-menu__geo-list-item"><a class="m-menu__geo-list-item-link" href="">Киев</a></li>
+            </ul>
+          </div>
+          <div class="m-menu__call flex aic"><a href="tel:+7 (812) 375-25-25">+7 (812) 375-25-25</a><a class="m-menu__call-event js-open-popup-call" href="">Обратный звонок</a></div>
+          <ul class="m-menu__list">
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Концерты</span>
+                <div class="m-menu-arrow"><img src="img/ico/arrow-red.svg" alt=""/></div></a>
+              <ul class="m-menu__sublist">
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Балет</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Гастроли</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Драма</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Комедия</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Кукольные</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Моноспектакли</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Музыкальный cпектакль</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Мюзикл</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Опера</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Премьеры</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Спектакль</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Творческий вечер</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Театральные шоу</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Трагикомедия</a></li>
+              </ul>
+            </li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""><span>Театры</span>
+                <div class="m-menu-arrow"><img src="img/ico/arrow-red.svg" alt=""/></div></a>
+              <ul class="m-menu__sublist">
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Балет</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Гастроли</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Драма</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Комедия</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Кукольные</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Моноспектакли</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Музыкальный cпектакль</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Мюзикл</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Опера</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Премьеры</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Спектакль</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Творческий вечер</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Театральные шоу</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Трагикомедия</a></li>
+              </ul>
+            </li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Детям</span>
+                <div class="m-menu-arrow"><img src="img/ico/arrow-red.svg" alt=""/></div></a>
+              <ul class="m-menu__sublist">
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Балет</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Гастроли</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Драма</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Комедия</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Кукольные</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Моноспектакли</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Музыкальный cпектакль</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Мюзикл</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Опера</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Премьеры</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Спектакль</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Творческий вечер</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Театральные шоу</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Трагикомедия</a></li>
+              </ul>
+            </li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Спорт</span>
+                <div class="m-menu-arrow"><img src="img/ico/arrow-red.svg" alt=""/></div></a>
+              <ul class="m-menu__sublist">
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Балет</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Гастроли</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Драма</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Комедия</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Кукольные</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Моноспектакли</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Музыкальный cпектакль</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Мюзикл</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Опера</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Премьеры</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Спектакль</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Творческий вечер</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Театральные шоу</a></li>
+                <li class="m-menu__sublist-item"><a class="m-menu__sublist-item-link" href="">Трагикомедия</a></li>
+              </ul>
+            </li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Исполнители</span></a></li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Шоу</span></a></li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Фестивали</span></a></li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Прочее</span></a></li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Кассы</span></a></li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Залы</span></a></li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Доставка</span></a></li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Договор оферты</span></a></li>
+            <li class="m-menu__item flex aic"><a class="m-menu__link flex aic" href=""> <span>Контакты</span></a></li>
+            <li class="m-menu__item"><a class="m-menu__link flex aic" href=""><span>Пользовательское соглашение</span></a></li>
+          </ul>
+          <div class="m-menu__copy">© ООО «АЛЛОШОУ», 2009-2019</div>
+        </div><a class="header__middle-logo" href=""><img class="logo-main" src="img/logo.svg" alt=""/><img class="logo-white" src="img/logo-white.svg" alt=""/></a>
+        <div class="header__middle-center flex aic">
+          <div class="header__middle-search">
+            <form class="flex aic" action="">
+              <label class="flex aic" for=""><i class="i-Search"></i>
+                <input type="text" placeholder="Куда пойдем? "/>
+              </label>
+              <div class="header__middle-search-reset js-checkSearch flex aic">
+                <div class="close"></div><span>Сбросить</span>
+              </div>
+            </form>
+          </div>
+          <div class="header__middle-date flex jcc aic">
+            <form action=""><a class="header__middle-date-btn flex aic" href=""><i class="i-Callendar"></i><span>Искать по дате</span></a>
+              <form action="">
+                <input type="hidden" id="first-date"/>
+                <input type="hidden" id="second-date"/>
+                <div class="pick-btn">
+                  <button class="pick-btn-item" id="three-days">3 дня</button>
+                  <button class="pick-btn-item" id="week">неделя</button>
+                  <button class="pick-btn-item" id="weekend">сб, вс</button>
+                </div>
+                <button class="pick-accept flex aic jcc"><img src="img/ico/accept.svg" alt=""/><span>Выбрать даты</span></button>
+              </form>
+            </form>
+          </div>
+        </div>
+        <div class="header__middle-right flex"><a class="header__middle-login js-auth" href="">Войти</a><a class="header__middle-cart" href="">Корзина</a></div>
+      </div>
+      <div class="header__bottom">
+        <ul class="header__bottom-list flex aic">
+          <li class="header__bottom-item"><a class="header__bottom-item-link" href="">Концерты</a>
+            <div class="header__bottom-submenu flex">
+              <ul class="header__bottom-submenu-list">
+                <li class="header__bottom-submenu-item"><a href="">R'n'B</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Авторский</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Альтернатива</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Джаз/Блюз</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Диско</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Инди</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Классика</a></li>
+              </ul>
+              <ul class="header__bottom-submenu-list">
+                <li class="header__bottom-submenu-item"><a href="">Метал</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Панк</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Поп</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Регги</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Рок</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Рок-н-ролл</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Рэп/Хип-хоп</a></li>
+              </ul>
+              <ul class="header__bottom-submenu-list">
+                <li class="header__bottom-submenu-item"><a href="">Соул</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Техно</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Транс</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Хаус</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Шансон</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Электронная музыка</a></li>
+              </ul>
+              <div class="header__bottom-submenu-preview flex"><a class="header__bottom-submenu-preview-item" href=""><img src="img/face.png" alt=""/></a><a class="header__bottom-submenu-preview-item" href=""><img src="img/len.png" alt=""/></a></div>
+            </div>
+          </li>
+          <li class="header__bottom-item"><a class="header__bottom-item-link" href="">Театры</a>
+            <div class="header__bottom-submenu flex">
+              <ul class="header__bottom-submenu-list">
+                <li class="header__bottom-submenu-item"><a href="">R'n'B</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Авторский</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Альтернатива</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Джаз/Блюз</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Диско</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Инди</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Классика</a></li>
+              </ul>
+              <ul class="header__bottom-submenu-list">
+                <li class="header__bottom-submenu-item"><a href="">R'n'B</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Авторский</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Альтернатива</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Джаз/Блюз</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Диско</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Инди</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Классика</a></li>
+              </ul>
+              <div class="header__bottom-submenu-preview flex"><a class="header__bottom-submenu-preview-item" href=""><img src="img/face.png" alt=""/></a><a class="header__bottom-submenu-preview-item" href=""><img src="img/len.png" alt=""/></a></div>
+            </div>
+          </li>
+          <li class="header__bottom-item"><a class="header__bottom-item-link" href="">Детям</a>
+            <div class="header__bottom-submenu flex">
+              <ul class="header__bottom-submenu-list">
+                <li class="header__bottom-submenu-item"><a href="">R'n'B</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Авторский</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Альтернатива</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Джаз/Блюз</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Диско</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Инди</a></li>
+                <li class="header__bottom-submenu-item"><a href="">Классика</a></li>
+              </ul>
+              <div class="header__bottom-submenu-preview flex"><a class="header__bottom-submenu-preview-item" href=""><img src="img/face.png" alt=""/></a><a class="header__bottom-submenu-preview-item" href=""><img src="img/len.png" alt=""/></a></div>
+            </div>
+          </li>
+          <li class="header__bottom-item"><a class="header__bottom-item-link" href="">Спорт</a></li>
+          <li class="header__bottom-item"><a class="header__bottom-item-link" href="">Шоу</a></li>
+          <li class="header__bottom-item"><a class="header__bottom-item-link" href="">Фестивали</a></li>
+          <li class="header__bottom-item"><a class="header__bottom-item-link" href="">Прочее</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="halls-detail event">
+      <div class="event__top">
+        <div class="event__slider swiper-container js-slider-event">
+          <ul class="event__slider-list swiper-wrapper">
+            <li class="event__slider-item swiper-slide"><img src="img/event-2.png" alt=""/></li>
+            <li class="event__slider-item swiper-slide"><img src="img/event-2.png" alt=""/></li>
+            <li class="event__slider-item swiper-slide">
+              <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" controls="controls">
+                <source src="video/2-mp4.mp4" type="video/mp4"/>
+              </video>
+            </li>
+          </ul>
+        </div>
+        <div class="event__data">
+          <div class="container">
+            <div class="event__data-wrapper">
+              <div class="event__tags flex aic">
+                <div class="event__tags-item"> <a href="">театр</a></div>
+              </div>
+              <div class="event__slider-nav">
+                <div class="event__slider-nav-item event__slider-nav-item--prev"><i class="i-ARROW"></i></div>
+                <div class="event__slider-nav-item event__slider-nav-item--next"><i class="i-ARROW"></i></div>
+              </div>
+              <div class="event__data-title flex aic jcsb">
+                <h1>Драматический театр имени В. Ф. Комиссаржевской</h1><span>Спектакль «Женщина-змея»</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list flex aic">
+            <li class="breadcrumbs__item"><a href="">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="">Афиша событий</a></li>
+            <li class="breadcrumbs__item"><a href="">Балет «Лебединое озеро» (СПб Театр балета им. П.И.Чайковского)</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="event__content">
+        <div class="container">
+          <div class="event__content-row flex-wrap">
+            <div class="event__desc">
+              <h2>О зале</h2>
+              <div class="event__desc-text">
+                <div class="event__desc-text-wrap">
+                  <p>«Лебединое озеро» – одно из самых фантастических и совершенных творений мирового искусства и самый известный балет в мире. Его хореография уже на протяжении долгого времени считается общепризнанным шедевром мирового балета, одним из ярчайших достижений русской национальной культуры</p>
+                  <p>«Лебединое озеро» – одно из самых фантастических и совершенных творений мирового искусства и самый известный балет в мире. Его хореография уже на протяжении долгого времени считается общепризнанным шедевром мирового балета, одним из ярчайших достижений русской национальной культуры</p>
+                </div><a class="js-open-event-desc-text" href="">Читать далее</a>
+              </div>
+              <div class="event__desc-social"><span>Поделиться: </span>
+                <ul class="event__desc-social-list">
+                  <li class="event__desc-social-item"><a href=""> <i class="i-telegram"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-viber"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-message"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-whats"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-vk-rounded"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-ok"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-fb-rounded"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="event__short event__short--halls">
+              <div class="halls__short"> <a href=""> 
+                  <div class="halls__short-img"><img src="img/halls/short.png" alt=""/></div>
+                  <div class="halls__short-content flex aic">
+                    <div class="halls__short-content-left"><i class="i-event-gallery"></i></div>
+                    <div class="halls__short-content-right">
+                      <p>Галерея зала</p><span>СМОТРЕТЬ <i class="i-ARROW"></i></span>
+                    </div>
+                  </div></a></div>
+            </div>
+            <div class="event__contacts" id="event-map">
+              <h2>Адрес</h2>
+              <div class="event__contacts-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8d649037a980226086e7de301ab776e7fe1c91da7edf29b93cd61a74014027e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe></div>
+              <div class="event__contacts-info flex aic jcsb">
+                <div class="event__contacts-info-left">
+                  <p class="event__contacts-info-place">Драматический театр имени В. Ф. Комиссаржевской</p>
+                  <p class="event__contacts-info-address">г. Санкт-Петербург, ул.Большая Итальянская, д. 19</p>
+                </div><a class="btn btn-green" href="">Проложить маршрут</a>
+              </div>
+            </div>
+            <div class="events__top flex-wrap jcsb aic">
+              <h2 class="events__top-title">Афиша на ближайшие дни</h2>
+              <div class="events__top-find">Найдено: 385 событий</div>
+            </div>
+            <ul class="events__list flex-wrap">
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                      <div class="slider-card__item-mark">Новинка</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Шоу "Принц цирка"</div><a class="slider-card__item-content-title" href="">Шоу "Принц цирка"</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                      <div class="slider-card__item-mark">Новинка</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Шоу "Принц цирка"</div><a class="slider-card__item-content-title" href="">Шоу "Принц цирка"</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                      <div class="slider-card__item-mark">Новинка</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Шоу "Принц цирка"</div><a class="slider-card__item-content-title" href="">Шоу "Принц цирка"</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item events__item-banner flex-wrap">
+                <div class="events__item-banner-item">
+                  <div class="slider-type-big__item">
+                    <div class="slider-type-big__item-top flex aic"><a class="slider-type-big__item-top-hashtag" href=""># МЮЗИКЛ</a></div>
+                    <div class="slider-type-big__item-img swiper-container js-slider-meloman-img"><img src="img/slider-type-big/1.png" alt=""/></div>
+                    <div class="slider-type-big__item-content"><a class="slider-type-big__item-content-place" href="">ЛДМ. Новая сцена</a>
+                      <div class="slider-type-big__item-content-title">Хоррор-мюзикл «Лолита» </div>
+                      <div class="slider-type-big__item-content-date">29 сентября 2019, вcк 19:00</div>
+                      <div class="slider-type-big__item-content-bottom flex"><a class="btn btn-red" href="">Купить билет</a>
+                        <div class="slider-type-big__item-content-price">
+                          <p>от<span>1 000 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="events__item-banner-item">
+                  <div class="slider-type-big__item">
+                    <div class="slider-type-big__item-top flex aic"><a class="slider-type-big__item-top-hashtag" href=""># МЮЗИКЛ</a></div>
+                    <div class="slider-type-big__item-img swiper-container js-slider-meloman-img"><img src="img/slider-type-big/1.png" alt=""/></div>
+                    <div class="slider-type-big__item-content"><a class="slider-type-big__item-content-place" href="">ЛДМ. Новая сцена</a>
+                      <div class="slider-type-big__item-content-title">Хоррор-мюзикл «Лолита» </div>
+                      <div class="slider-type-big__item-content-date">29 сентября 2019, вcк 19:00</div>
+                      <div class="slider-type-big__item-content-bottom flex"><a class="btn btn-red" href="">Купить билет</a>
+                        <div class="slider-type-big__item-content-price">
+                          <p>от<span>1 000 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                      <div class="slider-card__item-mark">Новинка</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Шоу "Принц цирка"</div><a class="slider-card__item-content-title" href="">Шоу "Принц цирка"</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                      <div class="slider-card__item-mark">Новинка</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Шоу "Принц цирка"</div><a class="slider-card__item-content-title" href="">Шоу "Принц цирка"</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                      <div class="slider-card__item-mark">Новинка</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Шоу "Принц цирка"</div><a class="slider-card__item-content-title" href="">Шоу "Принц цирка"</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item events__item-banner events__item-banner-big flex-wrap">
+                <div class="events__item-banner-item">
+                  <div class="slider-type-big__item">
+                    <div class="slider-type-big__item-top flex aic"><a class="slider-type-big__item-top-hashtag" href=""># МЮЗИКЛ</a></div>
+                    <div class="slider-type-big__item-img swiper-container js-slider-meloman-img"><img src="img/slider-type-big/1.png" alt=""/></div>
+                    <div class="slider-type-big__item-content"><a class="slider-type-big__item-content-place" href="">ЛДМ. Новая сцена</a>
+                      <div class="slider-type-big__item-content-title">Хоррор-мюзикл «Лолита» </div>
+                      <div class="slider-type-big__item-content-date">29 сентября 2019, вcк 19:00</div>
+                      <div class="slider-type-big__item-content-bottom flex"><a class="btn btn-red" href="">Купить билет</a>
+                        <div class="slider-type-big__item-content-price">
+                          <p>от<span>1 000 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="events__item-banner-item">
+                  <div class="slider-type-big__item">
+                    <div class="slider-type-big__item-top flex aic"><a class="slider-type-big__item-top-hashtag" href=""># МЮЗИКЛ</a></div>
+                    <div class="slider-type-big__item-img swiper-container js-slider-meloman-img"><img src="img/slider-type-big/1.png" alt=""/></div>
+                    <div class="slider-type-big__item-content"><a class="slider-type-big__item-content-place" href="">ЛДМ. Новая сцена</a>
+                      <div class="slider-type-big__item-content-title">Хоррор-мюзикл «Лолита» </div>
+                      <div class="slider-type-big__item-content-date">29 сентября 2019, вcк 19:00</div>
+                      <div class="slider-type-big__item-content-bottom flex"><a class="btn btn-red" href="">Купить билет</a>
+                        <div class="slider-type-big__item-content-price">
+                          <p>от<span>1 000 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                      <div class="slider-card__item-mark">Новинка</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Шоу "Принц цирка"</div><a class="slider-card__item-content-title" href="">Шоу "Принц цирка"</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                      <div class="slider-card__item-mark">Новинка</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Шоу "Принц цирка"</div><a class="slider-card__item-content-title" href="">Шоу "Принц цирка"</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-old">
+                          <p>1 900 ₽</p>
+                        </div>
+                        <div class="slider-card__item-content-bottom-price-new">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="events__item">
+                <div class="slider-card__item">
+                  <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                    <div class="slider-card__item-mark-container">
+                      <div class="slider-card__item-mark">Акция</div>
+                    </div>
+                  </div>
+                  <div class="slider-card__item-content">
+                    <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                    <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                      <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                      <div class="slider-card__item-content-bottom-price">
+                        <div class="slider-card__item-content-bottom-price-normal">
+                          <p>от<span>300 ₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="pagination">
+      <div class="container">
+        <ul class="pagination__list flex aic jcc">
+          <li class="pagination__item pagination__item-prev disabled"><a class="flex aic jcc" href=""><i class="i-arrow i-arrow-left"></i></a></li>
+          <li class="pagination__item active"><a class="flex aic jcc" href="">1</a></li>
+          <li class="pagination__item"><a class="flex aic jcc" href="">2</a></li>
+          <li class="pagination__item"><a class="flex aic jcc" href="">...</a></li>
+          <li class="pagination__item"><a class="flex aic jcc" href="">26</a></li>
+          <li class="pagination__item pagination__item-next"><a class="flex aic jcc" href=""> <i class="i-arrow i-arrow-right"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="slider-recommend">
+      <div class="container">
+        <div class="slider-top">
+          <div class="slider-top__title">
+            <p>ALLOSHOW РЕКОМЕНДУЕТ</p>
+            <h2>Рекоммендуем посетить</h2>
+          </div>
+          <div class="slider-top__nav">
+            <div class="slider-top__nav-item slider-top__nav-item-prev"><i class="i-ARROW i-ARROW-left"></i></div>
+            <div class="slider-top__nav-item slider-top__nav-item-next"><i class="i-ARROW"> </i></div>
+          </div>
+        </div>
+        <div class="slider-type-recommend swiper-container js-slider-recommend">
+          <ul class="slider-type-recommend-list swiper-wrapper">
+            <li class="halls__item swiper-slide"><a class="halls__link" href="">
+                <div class="halls__img"><img src="img/halls/1.png" alt=""/></div>
+                <div class="halls__content">
+                  <div class="halls__title">Концертно-спортивный комплекс «Тинькофф Арена»</div>
+                  <div class="halls__place">г. Санкт-Петербург, Приморский пр., 80/1</div>
+                </div></a></li>
+            <li class="halls__item swiper-slide"><a class="halls__link" href="">
+                <div class="halls__img"><img src="img/halls/2.png" alt=""/></div>
+                <div class="halls__content">
+                  <div class="halls__title">Александринский театр</div>
+                  <div class="halls__place">г. Санкт-Петербург, Приморский пр., 80/1</div>
+                </div></a></li>
+            <li class="halls__item swiper-slide"><a class="halls__link" href="">
+                <div class="halls__img"><img src="img/halls/3.png" alt=""/></div>
+                <div class="halls__content">
+                  <div class="halls__title">БКЗ Октябрьский</div>
+                  <div class="halls__place">г. Санкт-Петербург, Приморский пр., 80/1</div>
+                </div></a></li>
+            <li class="halls__item swiper-slide"><a class="halls__link" href="">
+                <div class="halls__img"><img src="img/halls/4.png" alt=""/></div>
+                <div class="halls__content">
+                  <div class="halls__title">Большой Итальянский просвет Государственного Эрмитажа</div>
+                  <div class="halls__place">г. Санкт-Петербург, Приморский пр., 80/1</div>
+                </div></a></li>
+            <li class="halls__item swiper-slide"><a class="halls__link" href="">
+                <div class="halls__img"><img src="img/halls/1.png" alt=""/></div>
+                <div class="halls__content">
+                  <div class="halls__title">Концертно-спортивный комплекс «Тинькофф Арена»</div>
+                  <div class="halls__place">г. Санкт-Петербург, Приморский пр., 80/1</div>
+                </div></a></li>
+            <li class="halls__item swiper-slide"><a class="halls__link" href="">
+                <div class="halls__img"><img src="img/halls/2.png" alt=""/></div>
+                <div class="halls__content">
+                  <div class="halls__title">Александринский театр</div>
+                  <div class="halls__place">г. Санкт-Петербург, Приморский пр., 80/1</div>
+                </div></a></li>
+            <li class="halls__item swiper-slide"><a class="halls__link" href="">
+                <div class="halls__img"><img src="img/halls/3.png" alt=""/></div>
+                <div class="halls__content">
+                  <div class="halls__title">БКЗ Октябрьский</div>
+                  <div class="halls__place">г. Санкт-Петербург, Приморский пр., 80/1</div>
+                </div></a></li>
+            <li class="halls__item swiper-slide"><a class="halls__link" href="">
+                <div class="halls__img"><img src="img/halls/4.png" alt=""/></div>
+                <div class="halls__content">
+                  <div class="halls__title">Большой Итальянский просвет Государственного Эрмитажа</div>
+                  <div class="halls__place">г. Санкт-Петербург, Приморский пр., 80/1</div>
+                </div></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="b-block-bottom">
+          <p>ALLOSHOW</p>
+          <h2>Билеты в театр и на концерты в Санкт-Петербурге</h2>
+        </div>
+        <div class="footer__row flex-wrap">
+          <div class="footer__col"><a class="footer__logo" href=""><img src="img/logo-red.svg" alt=""/></a>
+            <div class="social footer__social">
+              <div class="social__title">Мы в социальных сетях:</div>
+              <ul class="social__list flex aic">
+                <li class="social__item"><a class="social__link" href=""> <img src="img/ico/fb.svg" alt=""/></a></li>
+                <li class="social__item"><a class="social__link" href=""> <img src="img/ico/vk.svg" alt=""/></a></li>
+                <li class="social__item"><a class="social__link" href=""> <img src="img/ico/ok.svg" alt=""/></a></li>
+                <li class="social__item"><a class="social__link" href=""> <img src="img/ico/inst.svg" alt=""/></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Покупка</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Кассы</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Доставка</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Условия продажи</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Оплата</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">О компании</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Реквизиты</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Контакты</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Конфиденциальность</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Карта сайта</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Вопросы и ответы</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Организаторам</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Реклама</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Логотип</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="">Пользовательское соглашение</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col-copy">
+            <div class="footer__pay">
+              <div class="footer__pay-title">Принимаем к оплате:</div>
+              <ul class="footer__pay-list flex aic">
+                <li class="footer__pay-item"><img src="img/ico/mir.svg" alt=""/></li>
+                <li class="footer__pay-item"><img src="img/ico/visa.png" alt=""/></li>
+                <li class="footer__pay-item"><img src="img/ico/mc.png" alt=""/></li>
+              </ul>
+            </div>
+            <div class="footer__copy">© ООО «АЛЛОШОУ», 2009-2019</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay"></div>
+    <div class="popup popup-city">
+      <div class="i-close"></div>
+      <div class="popup-city__title">Ваш регион </div>
+      <ul class="popup-city__list">
+        <li class="popup-city__item"><a href="">Москва </a></li>
+        <li class="popup-city__item"><a href="">Новосибирск </a></li>
+      </ul>
+    </div>
+    <div class="popup popup-call">
+      <div class="i-close"></div>
+      <form class="popup__form" action="" method="">
+        <div class="popup__form-item">
+          <input type="text" required="required"/>
+          <div class="popup__form-item-placeholder flex aic">Ваше имя<span>*</span></div>
+        </div>
+        <div class="popup__form-item">
+          <input type="text" required="required" data-phone="data-phone"/>
+          <div class="popup__form-item-placeholder flex aic">Ваш телефон<span>*</span></div>
+        </div>
+        <button class="btn btn-green js-send-popup-call" type="submit">Заказать звонок</button>
+      </form>
+    </div>
+    <div class="popup popup-ok">
+      <div class="i-close"></div>
+      <div class="popup-ok__title">Мы свяжемся с вами в ближайшее время. </div>
+      <ul class="popup-ok__list">
+        <li class="popup-ok__item">
+          <div class="popup-ok__item-time">с 9 до 20 часов </div>
+          <div class="popup-ok__item-character">в будние</div>
+        </li>
+        <li class="popup-ok__item">
+          <div class="popup-ok__item-time">с 10 до 19 часов</div>
+          <div class="popup-ok__item-character">в праздничные и выходные дни.</div>
+        </li>
+      </ul><a class="btn btn-green popup-ok-btn js-close-popup" href="">ОК</a>
+    </div>
+    <div class="popup popup-auth">
+      <div class="i-close"></div>
+      <div class="popup-auth__top">
+        <div class="popup__switch flex aic">
+          <div class="popup__switch-item active">Авторизация</div>
+          <div class="popup__switch-item">Регистрация</div>
+        </div>
+        <form class="form personal__form js-contacts-form active" action="">
+          <div class="form__field">
+            <input type="text" required="required" name="name"/>
+            <div class="form__field-placeholder">Ваше имя<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__field">
+            <input type="text" required="required" data-phone="data-phone" name="phone"/>
+            <div class="form__field-placeholder">Ваш телефон<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__field">
+            <input type="text" required="required" name="email"/>
+            <div class="form__field-placeholder">Ваш e-mail<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__field">
+            <input type="text" required="required" name="email"/>
+            <div class="form__field-placeholder">Пароль<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__checkbox">
+            <input type="checkbox" id="check" name="subscribe"/>
+            <label for="check">
+              <div class="form__checkbox-btn"><i class="i-check"></i></div><span>Подписаться на новостную рассылку</span>
+            </label>
+          </div>
+          <div class="form__checkbox">
+            <input type="checkbox" id="check-privacy" name="subscribe"/>
+            <label for="check-privacy">
+              <div class="form__checkbox-btn"><i class="i-check"></i></div><span>Я согласен с <a href="">правилами заказа билетов</a></span>
+            </label>
+          </div>
+          <button class="btn btn-red" type="submit">Войти</button>
+        </form>
+        <form class="form personal__form js-contacts-form" action="">
+          <div class="form__field">
+            <input type="text" required="required" name="email"/>
+            <div class="form__field-placeholder">Ваш e-mail<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__field">
+            <input type="text" required="required" name="email"/>
+            <div class="form__field-placeholder">Пароль<span>*</span></div>
+            <div class="form__error">Недопустимый формат</div>
+          </div>
+          <div class="form__checkbox flex aic jcsb">
+            <input type="checkbox" id="check-remember" name="subscribe"/>
+            <label for="check-remember">
+              <div class="form__checkbox-btn"><i class="i-check"></i></div><span>Запомнить меня</span>
+            </label><a href="">Забыли пароль?</a>
+          </div>
+          <button class="btn btn-red" type="submit">Войти</button>
+        </form>
+      </div>
+      <div class="popup__social">
+        <div class="popup__social-title">Зарегистрироваться, используя аккаунт</div>
+        <ul class="popup__social-list flex aic">
+          <li> <a href=""><i class="i-goggle"></i></a></li>
+          <li> <a href=""><i class="i-yandex"></i></a></li>
+          <li> <a href=""><i class="i-facebook"></i></a></li>
+          <li> <a href=""><i class="i-vk--red"></i></a></li>
+          <li> <a href="">все</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/imask.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/pickmeup.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

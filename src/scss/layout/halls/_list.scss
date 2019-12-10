@@ -66,3 +66,15 @@
         transition: .3s;
     }
 }
+.slider-type-recommend{ 
+    margin-top: 40px;/* 
+    padding-bottom: 80px;
+    @include media(1000){
+        padding: 0;
+    } */
+    .halls__item{
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title ALLOSHOW
+        link(rel="stylesheet" href="style.css")
+    body
+        include blocks/_header
+        section.breadcrumbs
+            .container
+                ul.breadcrumbs__list.flex.aic
+                    li.breadcrumbs__item
+                        a(href="") Главная
+                    li.breadcrumbs__item
+                        a(href="") Личный кабинет
+                    li.breadcrumbs__item
+                        a(href="") «Alloshow»
+        section.personal
+            .container
+                .content 
+                    h1 Мои данные
+                .content__row.flex-wrap.faq__row
+                    aside.sidebar.content__col.content__col--left   
+                        .line 
+                        ul.sidebar__list.faq__tabs
+                            li.sidebar__item.faq__tabs-item 
+                                a(href="") Мои заказы
+                            li.sidebar__item.faq__tabs-item.active
+                                a(href="") Мои данные
+                            li.sidebar__item.faq__tabs-item 
+                                a(href="") Выход
+                    .content__col.content__col--right.content__col--personal
+                        form(action="").form.personal__form.js-contacts-form
+                            .form__title Свяжитесь с нами
+                            .form__field
+                                input(type="text" required name="name")
+                                .form__field-placeholder Ваше имя
+                                    span *
+                                .form__error Недопустимый формат
+                            .form__field
+                                input(type="text" required name="email")
+                                .form__field-placeholder Ваш e-mail
+                                    span *
+                                .form__error Недопустимый формат
+                            .form__field
+                                input(type="text" required data-phone name="phone")
+                                .form__field-placeholder Ваш телефон
+                                    span *
+                                .form__error Недопустимый формат
+                            .form__field
+                                input(type="text" name="phone")
+                                .form__field-placeholder Новый пароль, если необходимо изменить
+                                .form__error Недопустимый формат
+                            .form__checkbox
+                                input(type="checkbox" id="check" name="subscribe")
+                                label(for="check")
+                                    .form__checkbox-btn
+                                        i.i-check
+                                    span Подписаться на новостную рассылку
+                            button(type="submit").btn.btn-red Сохранить
+        include blocks/_slider-skip.pug
+        include blocks/_footer
+        include blocks/_popup
+        script(src="js/jquery.min.js")
+        script(src="js/imask.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/pickmeup.min.js")
+        script(src="js/main.js")

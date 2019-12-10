@@ -1,0 +1,21 @@
+.personal{
+    &__form{
+        padding: 48px; 
+        max-width: 470px;
+        box-shadow: 0 50px 39px -40px rgba(0, 0, 0, 0.09);
+        border-radius: 4px;
+        background-color: #ffffff;     
+    }
+    .content__col--left{
+        @include col(2);
+        @include media(1000){
+            @include col(3);
+        }
+    }
+    .content__col--right{
+        @include col(10);
+        @include media(1000){
+            @include col(8);
+        }
+    }
+}

@@ -236,18 +236,27 @@
       <div class="container">
         <ul class="breadcrumbs__list flex aic">
           <li class="breadcrumbs__item"><a href="">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="">Контакты</a></li>
+          <li class="breadcrumbs__item"><a href="">Личный кабинет</a></li>
+          <li class="breadcrumbs__item"><a href="">«Alloshow»</a></li>
         </ul>
       </div>
     </section>
-    <section class="contacts">
+    <section class="personal">
       <div class="container">
-        <div class="content">
-          <h1>Контакты</h1>
+        <div class="content"> 
+          <h1>Мои данные</h1>
         </div>
-        <div class="contacts__row flex-wrap">
-          <div class="contacts__col contacts__col--form">
-            <form class="form js-contacts-form" action="">
+        <div class="content__row flex-wrap faq__row">
+          <aside class="sidebar content__col content__col--left">  
+            <div class="line"> </div>
+            <ul class="sidebar__list faq__tabs">
+              <li class="sidebar__item faq__tabs-item"> <a href="">Мои заказы</a></li>
+              <li class="sidebar__item faq__tabs-item active"><a href="">Мои данные</a></li>
+              <li class="sidebar__item faq__tabs-item"> <a href="">Выход</a></li>
+            </ul>
+          </aside>
+          <div class="content__col content__col--right content__col--personal">
+            <form class="form personal__form js-contacts-form" action="">
               <div class="form__title">Свяжитесь с нами</div>
               <div class="form__field">
                 <input type="text" required="required" name="name"/>
@@ -265,30 +274,295 @@
                 <div class="form__error">Недопустимый формат</div>
               </div>
               <div class="form__field">
-                <textarea></textarea>
-                <div class="form__field-placeholder">Комментарий<span>*</span></div>
+                <input type="text" name="phone"/>
+                <div class="form__field-placeholder">Новый пароль, если необходимо изменить</div>
+                <div class="form__error">Недопустимый формат</div>
               </div>
-              <button class="btn btn-green" type="submit">Отправить</button>
-              <div class="form__privacy">Нажимая кнопку «Отправить» вы соглашаетесь с <a href="">политикой конфиденциальности</a></div>
+              <div class="form__checkbox">
+                <input type="checkbox" id="check" name="subscribe"/>
+                <label for="check">
+                  <div class="form__checkbox-btn"><i class="i-check"></i></div><span>Подписаться на новостную рассылку</span>
+                </label>
+              </div>
+              <button class="btn btn-red" type="submit">Сохранить</button>
             </form>
           </div>
-          <div class="contacts__col contacts__col--map">
-            <div class="contacts__map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ef8efef378fd0d023d6b7edf696c620bf05ffd26502d2ea90f64245d77c750e&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
-              <div class="contacts__info">
-                <div class="contacts__info-title">ООО «АЛЛОШОУ»</div>
-                <ul class="contacts__info-list">
-                  <li class="contacts__info-item"><span>Наш call-центр:</span><a href="tel:+7 (812) 375-25-25">+7 (812) 375-25-25</a></li>
-                  <li class="contacts__info-item"><span>Для общих вопросов и вопросам по контенту:</span><a href="mailto:info@alloshow.ru">info@alloshow.ru</a></li>
-                  <li class="contacts__info-item"><span>Адрес</span>
-                    <p>196084, Санкт-Петербург, Московский пр. 97А, офис 401</p>
-                  </li>
-                  <li class="contacts__info-item"><span>Часы работы</span>
-                    <p><strong>пн-пт:</strong> 9:00 - 20:00<br><strong>сб-вс:</strong>  10:00 - 19:00</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider-skip">
+      <div class="container">
+        <div class="slider-top">
+          <div class="slider-top__title">
+            <p>ALLOSHOW РЕКОМЕНДУЕТ</p>
+            <h2>Это нельзя пропустить</h2>
           </div>
+          <div class="slider-top__nav">
+            <div class="slider-top__nav-item slider-top__nav-item-prev"><i class="i-ARROW i-ARROW-left"></i></div>
+            <div class="slider-top__nav-item slider-top__nav-item-next"><i class="i-ARROW"> </i></div>
+          </div>
+        </div>
+        <div class="slider-card__container js-slider-skip">
+          <ul class="slider-card__list swiper-wrapper">
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-normal">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-old">
+                      <p>1 900 ₽</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom-price-new">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-normal">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-old">
+                      <p>1 900 ₽</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom-price-new">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-normal">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-old">
+                      <p>1 900 ₽</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom-price-new">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-normal">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-old">
+                      <p>1 900 ₽</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom-price-new">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-normal">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-old">
+                      <p>1 900 ₽</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom-price-new">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Фортепианный вечер Марии Меерович пример длинного заголовка не ограничен и еще не много текста от верстальщика на всякий случай</div><a class="slider-card__item-content-title" href=""> </a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-normal">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider-card__item swiper-slide">
+              <div class="slider-card__item-img"><img src="img/slider-skip/3.png" alt=""/>
+                <div class="slider-card__item-mark-container">
+                  <div class="slider-card__item-mark">Акция</div>
+                </div>
+              </div>
+              <div class="slider-card__item-content">
+                <div class="slider-card__item-content-title-hidden">Спектакль «Укрощение строптивой»</div><a class="slider-card__item-content-title" href="">Спектакль «Укрощение строптивой»</a>
+                <div class="slider-card__item-content-desc"><a class="slider-card__item-content-desc-place" href="">Театр-фестиваль Балтийский Дом</a>
+                  <p class="slider-card__item-content-desc-date">20 сентября 2019, Пт 19:30</p>
+                </div>
+                <div class="slider-card__item-content-bottom flex"><a class="btn btn-red slider-card__item-content-bottom-btn" href="">Купить билет</a>
+                  <div class="slider-card__item-content-bottom-price">
+                    <div class="slider-card__item-content-bottom-price-old">
+                      <p>1 900 ₽</p>
+                    </div>
+                    <div class="slider-card__item-content-bottom-price-new">
+                      <p>от<span>300 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

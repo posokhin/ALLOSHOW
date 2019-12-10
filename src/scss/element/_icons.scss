@@ -133,4 +133,34 @@
         width: 32px;
         height: 32px;     
     }
+    &-check{
+        display: block;
+        background: url("img/ico/accept.svg") no-repeat center/contain;
+        width: 9px;
+        height: 7px;     
+    }
+    &-goggle{
+        display: block;
+        background: url("img/ico/goggle.svg") no-repeat center/contain;
+        width: 16px;
+        height: 16px;      
+    }
+    &-yandex{
+        display: block;
+        background: url("img/ico/ya.svg") no-repeat center/contain;
+        width: 10px;
+        height: 20px;      
+    }
+    &-facebook{
+        display: block;
+        background: url("img/ico/fa.svg") no-repeat center/contain;
+        width: 11px;
+        height: 21px;      
+    }
+    &-vk--red{
+        display: block;
+        background: url("img/ico/vk--red.svg") no-repeat center/contain;
+        width: 23px;
+        height: 14px;      
+    }
 }

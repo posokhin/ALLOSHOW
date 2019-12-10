@@ -40,7 +40,7 @@
         textarea{ 
             resize: none;
         }
-        input:focus, input:not(:focus):valid,textarea:focus{
+        /* input:focus, input:not(:focus):valid,textarea:focus{
             +.form__field-placeholder{
                 color: #929292;
                 font-size: 11px;
@@ -50,7 +50,7 @@
                     font-size: 12px;
                 }
             }
-        }
+        } */
         &-placeholder{
             position: absolute;
             bottom: 8px;
@@ -67,6 +67,15 @@
                 letter-spacing: 0.43px;     
                 display: inline-block; 
                 margin-left: 6px;  
+            }
+            &.active{
+                color: #929292;
+                font-size: 11px;
+                letter-spacing: 0.39px;
+                bottom: 100%;
+                span{
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -126,8 +135,40 @@
             }
         }
     }
-    button{
+    &__checkbox{
+        margin-bottom: 23px;
         margin-top: -20px;
+        input{
+            display: none;
+            &:checked{
+                ~label i{
+                    opacity: 1;
+                }
+            }
+        }
+        label{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        &-btn{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+            border: 1px solid #c80a09;
+            margin-right: 12px;
+            i{
+                margin-left: 1px;
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+    }
+    button{
+        /* margin-top: -20px; */
     }
     &__privacy{
         color: #525256;

@@ -17,6 +17,13 @@
         margin-bottom: 40px;
         position: relative;
         cursor: pointer;
+        a{
+            color: #000000;
+            transition: .3s;
+            &:hover{
+                color: #c80a09;
+            }
+        }
         &:last-child{
             margin-bottom: 0;
         }   
@@ -25,18 +32,10 @@
             font-weight: 500;   
             display: flex;
             align-items: center;    
-            /* &::before{
-                content: "";
-                display: block;
-                width: 3px;
-                height: 40px;
-                box-shadow: 0 4px 12px rgba(200, 10, 9, 0.48);
-                background-color: #c80a09;
-                position: absolute;
-                left: -15px;
-                top: 50%;
-                transform: translateY(-50%);
-            } */
+            a{
+                color: #c80a09;
+                font-weight: 500;   
+            }
         }
     }
 }
