@@ -526,7 +526,7 @@ $(document).ready(function () {
     var phoneFields = document.querySelectorAll('[data-phone]');
     if (phoneFields.length) {
         phoneFields.forEach(function (el) {
-            IMask(el, { mask: '+{7}(000)000-00-00' });
+            IMask(el, { mask: '+{*}(000)000-00-00' });
         });
     }
 

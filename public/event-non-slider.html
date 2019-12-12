@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -232,63 +232,258 @@
         </ul>
       </div>
     </header>
-    <section class="breadcrumbs">
-      <div class="container">
-        <ul class="breadcrumbs__list flex aic">
-          <li class="breadcrumbs__item"><a href="">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="">Личный кабинет</a></li>
-          <li class="breadcrumbs__item"><a href="">«Alloshow»</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="personal">
-      <div class="container">
-        <div class="content"> 
-          <h1>Мои данные</h1>
+    <section class="event">
+      <div class="event__top event__top--default">
+        <div class="event__top-background"><img src="img/default.png" alt=""/></div>
+        <!--.event__slider.swiper-container.js-slider-event
+        ul.event__slider-list.swiper-wrapper
+            li.event__slider-item.swiper-slide
+                img(src="img/event-1.png", alt="")
+            li.event__slider-item.swiper-slide
+                img(src="img/event-1.png", alt="")
+            li.event__slider-item.swiper-slide
+                video(autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" controls="controls")
+                    source(src="video/2-mp4.mp4", type="video/mp4")
+        -->
+        <div class="event__data event__data--default">
+          <div class="container">
+            <div class="event__data-wrapper">
+              <div class="event__tags flex aic">
+                <div class="event__tags-item"><a href=""># Балет</a></div>
+                <div class="event__tags-item"> <a href=""># театр</a></div>
+              </div>
+              <div class="event__data-title flex aic">
+                <div class="event__data-img"><img src="img/_event.png" alt=""/></div>
+                <div class="event__data-text">
+                  <div class="marks">
+                    <div class="marks__item"><a href="">Акция</a></div>
+                  </div>
+                  <h1>Балет «Лебединое озеро»</h1>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="content__row flex-wrap faq__row">
-          <aside class="sidebar content__col content__col--left">  
-            <div class="line"> </div>
-            <ul class="sidebar__list faq__tabs">
-              <li class="sidebar__item faq__tabs-item"> <a href="">Мои заказы</a></li>
-              <li class="sidebar__item faq__tabs-item active"><a href="">Мои данные</a></li>
-              <li class="sidebar__item faq__tabs-item"> <a href="">Выход</a></li>
-            </ul>
-          </aside>
-          <div class="content__col content__col--right content__col--personal">
-            <form class="form personal__form js-contacts-form" action="">
-              <div class="form__title">Свяжитесь с нами</div>
-              <div class="form__field">
-                <input type="text" required="required" name="name"/>
-                <div class="form__field-placeholder">Ваше имя<span>*</span></div>
-                <div class="form__error">Недопустимый формат</div>
+        <div class="event__top-info">
+          <div class="event__top-info-row flex">
+            <div class="event__top-info-left flex">
+              <div class="event__top-info-col"><span>Дата проведения</span><a href="">16 августа - 24 октября 2019</a></div>
+              <div class="event__top-info-col"><span>Место проведения</span><a href="">Эрмитажный театр</a></div>
+              <div class="event__top-info-col"><span>В наличии:</span>
+                <p>Больше 50 билетов</p>
               </div>
-              <div class="form__field">
-                <input type="text" required="required" name="email"/>
-                <div class="form__field-placeholder">Ваш e-mail<span>*</span></div>
-                <div class="form__error">Недопустимый формат</div>
-              </div>
-              <div class="form__field">
-                <input type="text" required="required" data-phone="data-phone" name="phone"/>
-                <div class="form__field-placeholder">Ваш телефон<span>*</span></div>
-                <div class="form__error">Недопустимый формат</div>
-              </div>
-              <div class="form__field">
-                <input type="text" name="password"/>
-                <div class="form__field-placeholder">Новый пароль, если необходимо изменить</div>
-                <div class="form__error">Недопустимый формат</div>
-              </div>
-              <div class="form__checkbox">
-                <input type="checkbox" id="check" name="subscribe"/>
-                <label for="check">
-                  <div class="form__checkbox-btn"><i class="i-check"></i></div><span>Подписаться на новостную рассылку</span>
-                </label>
-              </div>
-              <button class="btn btn-red" type="submit">Сохранить</button>
-            </form>
+            </div>
+            <div class="event__top-info-right flex aic">
+              <div class="event__top-info-price">
+                <div class="event__top-info-price-old">2400 ₽</div>
+                <div class="event__top-info-price-new">от <span>1 500 ₽</span></div>
+              </div><a class="btn btn-red" href="">Купить билет</a>
+            </div>
           </div>
         </div>
       </div>
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list flex aic">
+            <li class="breadcrumbs__item"><a href="">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="">Афиша событий</a></li>
+            <li class="breadcrumbs__item"><a href="">Балет «Лебединое озеро» (СПб Театр балета им. П.И.Чайковского)</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="event__content">
+        <div class="container">
+          <div class="event__content-row flex-wrap">
+            <div class="event__desc">
+              <h2>О событии</h2>
+              <div class="event__desc-buttons flex aic"><a class="event__desc-buttons-item flex aic js-event-gallery-video" href=""><i class="i-event-video"></i>
+                  <div class="event__desc-buttons-item-txt">
+                    <p>Видео с события</p><span>СМОТРЕТЬ <i class="i-ARROW"></i></span>
+                  </div></a><a class="event__desc-buttons-item flex aic js-event-gallery" href=""><i class="i-event-gallery"></i>
+                  <div class="event__desc-buttons-item-txt">
+                    <p>Галерея события </p><span>СМОТРЕТЬ <i class="i-ARROW"></i></span>
+                  </div></a></div>
+              <ul class="event__desc-list">
+                <li class="event__desc-item flex aic"><span>Музыка:</span><span>П.И.Чайковский.</span></li>
+                <li class="event__desc-item flex aic"><span>Либретто:</span><span>Владимир Бегичев и Василий Гельцер.</span></li>
+                <li class="event__desc-item flex aic"><span>Либретто: </span><span>Владимир Бегичев и Василий Гельцер.</span></li>
+                <li class="event__desc-item flex aic"><span>Хореография: </span><span>Мариус Петипа, Лев Иванов.</span></li>
+                <li class="event__desc-item flex aic"><span>Редакция: </span><span>Константин Сергеев.</span></li>
+              </ul>
+              <div class="event__desc-text">
+                <div class="event__desc-text-wrap">
+                  <p>«Лебединое озеро» – одно из самых фантастических и совершенных творений мирового искусства и самый известный балет в мире. Его хореография уже на протяжении долгого времени считается общепризнанным шедевром мирового балета, одним из ярчайших достижений русской национальной культуры</p>
+                  <p>«Лебединое озеро» – одно из самых фантастических и совершенных творений мирового искусства и самый известный балет в мире. Его хореография уже на протяжении долгого времени считается общепризнанным шедевром мирового балета, одним из ярчайших достижений русской национальной культуры</p>
+                </div><a class="js-open-event-desc-text" href="">Читать далее</a>
+              </div>
+              <div class="event__desc-social"><span>Поделиться: </span>
+                <ul class="event__desc-social-list">
+                  <li class="event__desc-social-item"><a href=""> <i class="i-telegram"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-viber"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-message"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-whats"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-vk-rounded"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-ok"></i></a></li>
+                  <li class="event__desc-social-item"><a href=""> <i class="i-fb-rounded"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="event__short">
+              <div class="event__short-content">
+                <ul class="event__short-list">
+                  <li class="event__short-item">
+                    <div class="event__short-title">дата</div>
+                    <div class="event__short-item-right"><a class="tdn" href="">16 августа - 24 октября 2019</a></div>
+                  </li>
+                  <li class="event__short-item">
+                    <div class="event__short-title">место проведения</div>
+                    <div class="event__short-item-right"><a class="tdn" href="">Эрмитажный театр</a>
+                      <p>г. Санкт-Петербург, Дворцовая наб., д.34</p><a class="js-scroll-map" href="#event-map">На карте</a>
+                    </div>
+                  </li>
+                  <li class="event__short-item">
+                    <div class="event__short-title">стоимость билетов</div>
+                    <div class="event__short-item-right">
+                      <p>3200 - 5800 ₽ </p>
+                    </div>
+                  </li>
+                  <li class="event__short-item">
+                    <div class="event__short-title">билеты в рассрочку</div>
+                    <div class="event__short-item-right"><a href="">Условия рассрочки</a></div>
+                  </li>
+                  <li class="event__short-item">
+                    <div class="event__short-title">ограничения по возрасту</div>
+                    <div class="event__short-item-right">
+                      <p>0+</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="event__short-timer">
+                  <div class="event__short-timer-title">до ближайшего осталось:</div>
+                  <ul class="event__short-timer-list flex aic">
+                    <div class="event__short-timer-item event__short-timer-item--days">
+                      <p>01</p><span>дней</span>
+                    </div>
+                    <div class="separate">:</div>
+                    <div class="event__short-timer-item event__short-timer-item--hours">
+                      <p>16</p><span>часов</span>
+                    </div>
+                    <div class="separate">:</div>
+                    <div class="event__short-timer-item event__short-timer-item--minutes">
+                      <p>34</p><span>минут</span>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <div class="event__short-buttons flex-wrap">
+                <div class="event__short-buttons-item">
+                  <div class="event__short-buttons-item-inner flex aic">
+                    <div class="event__short-buttons-icon"><i class="i-music"></i></div>
+                    <div class="event__short-buttons-item-right">
+                      <p>Провели<br>7000 концертов  </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="event__short-buttons-item">
+                  <div class="event__short-buttons-item-inner flex aic">
+                    <div class="event__short-buttons-icon"><i class="i-ticket"></i></div>
+                    <div class="event__short-buttons-item-right">
+                      <p>Более 2000<br>билетов в день </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="event__short-buttons-item">
+                  <div class="event__short-buttons-item-inner flex aic">
+                    <div class="event__short-buttons-icon"><i class="i-pay"></i></div>
+                    <div class="event__short-buttons-item-right">
+                      <p>Все виды<br>оплаты </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="event__short-buttons-item">
+                  <div class="event__short-buttons-item-inner flex aic">
+                    <div class="event__short-buttons-icon"><i class="i-wifi"></i></div>
+                    <div class="event__short-buttons-item-right">
+                      <p>100% надежный<br>эквайринг </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="select-ticket">
+              <h2>Выбор билета</h2>
+              <ul class="select-ticket__list">
+                <li class="select-ticket__item">
+                  <div class="select-ticket__item-top flex aic jcsb">
+                    <div class="select-ticket__item-month"> Август, 2019</div>
+                    <div class="select-ticket__item-toggler flex aic active">
+                      <div class="select-ticket__item-toggler-txt"><span>Скрыть </span>8 событий</div>
+                      <div class="select-ticket__item-toggler-btn"></div>
+                    </div>
+                  </div>
+                  <ul class="select-ticket__cards flex-wrap open">
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                  </ul>
+                </li>
+                <li class="select-ticket__item">
+                  <div class="select-ticket__item-top flex aic jcsb">
+                    <div class="select-ticket__item-month"> Август, 2019</div>
+                    <div class="select-ticket__item-toggler flex aic">
+                      <div class="select-ticket__item-toggler-txt"><span>Показать </span>8 событий</div>
+                      <div class="select-ticket__item-toggler-btn"></div>
+                    </div>
+                  </div>
+                  <ul class="select-ticket__cards flex-wrap">
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                  </ul>
+                </li>
+                <li class="select-ticket__item">
+                  <div class="select-ticket__item-top flex aic jcsb">
+                    <div class="select-ticket__item-month"> Август, 2019</div>
+                    <div class="select-ticket__item-toggler flex aic">
+                      <div class="select-ticket__item-toggler-txt"><span>Показать </span>8 событий</div>
+                      <div class="select-ticket__item-toggler-btn"></div>
+                    </div>
+                  </div>
+                  <ul class="select-ticket__cards flex-wrap">
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                    <li class="select-ticket__cards-item"><a href=""><span>24 августа</span><span>20:00</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="event__tickets"><img src="img/tickets.png" alt=""/></div>
+            <div class="event__contacts" id="event-map">
+              <h2>Адрес</h2>
+              <div class="event__contacts-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8d649037a980226086e7de301ab776e7fe1c91da7edf29b93cd61a74014027e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe></div>
+              <div class="event__contacts-info"><span>Место проведения</span>
+                <p class="event__contacts-info-place">Эрмитажный театр</p>
+                <p class="event__contacts-info-address">г. Санкт-Петербург, Дворцовая наб., д.34</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
     <section class="slider-skip">
       <div class="container">
@@ -739,6 +934,7 @@
     <script src="js/imask.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/pickmeup.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
