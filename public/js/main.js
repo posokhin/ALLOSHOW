@@ -820,7 +820,7 @@ $(document).ready(function () {
     function placeholderAnimate(){
         $(this).siblings('.form__field-placeholder').addClass('active');
     }
-    var inputs = document.querySelectorAll('.form__field input');
+    var inputs = document.querySelectorAll('.form__field input,.form__field textarea');
     if(inputs.length){
         inputs.forEach(function(el){
             el.addEventListener('focus', placeholderAnimate);

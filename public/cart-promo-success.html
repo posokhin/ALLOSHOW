@@ -327,26 +327,20 @@
             </div>
           </li>
         </ul>
-        <div class="cart__total flex">
+        <div class="cart__total cart__total--success flex">
+          <div class="cart__total-info">
+            <div class="cart__total-info-item flex jcsb"><span>Цена:</span><span>14 500 ₽</span></div>
+            <div class="cart__total-info-item flex jcsb"><span>Скидка:</span><span>500 ₽</span></div>
+          </div>
           <div class="cart__total-wrap flex">
             <div class="cart__total-left">
               <p>Итого:</p>
             </div>
             <div class="cart__total-price">
-              <p>10 500 ₽</p><a class="js-open-promocode" href="">Есть промокод?</a>
+              <p>10 500 ₽</p>
             </div>
           </div>
-          <div class="cart__promocode">
-            <form class="form flex" action="">
-              <div class="i-close js-close-promocode"></div>
-              <div class="form__field">
-                <input type="text" name="promocode" required="required"/>
-                <div class="form__field-placeholder"> Введите промокод</div>
-                <div class="form__error">Недопустимый формат</div>
-              </div>
-              <button class="btn btn-red" type="submit">Применить</button>
-            </form>
-          </div>
+          <div class="cart__total-promo-success flex aic"><i class="i-promo"></i><span>Промокод применен</span></div>
         </div>
         <div class="checkout">
           <div class="h1">Оформление заказа</div>

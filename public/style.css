@@ -6831,6 +6831,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #c80a09;
   background: transparent;
   max-width: 190px;
+  width: 100%;
   height: 42px;
 }
 
@@ -7317,6 +7318,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   height: 14px;
 }
 
+.i-promo {
+  display: block;
+  background: url("img/ico/i-promo.svg") no-repeat center/contain;
+  width: 16px;
+  height: 16px;
+}
+
 .marks__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7415,6 +7423,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .popup {
+  border: 2px solid #c80a09;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -9188,6 +9197,42 @@ p .btn {
   margin-top: 16px;
 }
 
+.cart__total--success .cart__total-wrap {
+  max-width: 25%;
+  padding-left: 24px;
+  margin-left: auto;
+}
+
+.cart__total--success .cart__total-price {
+  width: 100%;
+}
+
+.cart__total--success .cart__total-price p {
+  width: auto;
+}
+
+.cart__total--success .cart__total-info {
+  width: 25%;
+  padding-left: 24px;
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+.cart__total--success .cart__total-info-item {
+  margin-bottom: 8px;
+}
+
+.cart__total--success .cart__total-info span {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.168824px;
+  color: #383838;
+}
+
+.cart__total--success p {
+  text-align: right;
+}
+
 .cart__total-wrap {
   width: 100%;
   -webkit-box-pack: end;
@@ -9212,6 +9257,16 @@ p .btn {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+}
+
+.cart__total-promo-success {
+  margin-top: 8px;
+  width: 25%;
+  padding-left: 24px;
+}
+
+.cart__total-promo-success span {
+  margin-left: 8px;
 }
 
 .checkout__row {
@@ -13466,12 +13521,39 @@ p .btn {
     margin-top: 16px;
   }
 
+  .cart__total--success {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .cart__total--success .cart__total-wrap {
+    padding: 0;
+    margin: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .cart__total--success .cart__total-price {
+    width: auto;
+  }
+
+  .cart__total--success .cart__total-info {
+    margin: 0;
+    padding: 0;
+  }
+
   .cart__total-price {
     width: auto;
   }
 
   .cart__total-price p {
     width: 203px;
+  }
+
+  .cart__total-promo-success {
+    padding: 0;
   }
 
   .checkout__row {

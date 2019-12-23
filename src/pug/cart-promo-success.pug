@@ -96,21 +96,22 @@ html(lang="en")
                         .cart__right
                             .cart__price 3 500 ₽
                             span Cервисный сбор 350 ₽ 
-                .cart__total.flex
+                .cart__total.cart__total--success.flex
+                    .cart__total-info
+                        .cart__total-info-item.flex.jcsb
+                            span Цена:
+                            span 14 500 ₽
+                        .cart__total-info-item.flex.jcsb
+                            span Скидка:
+                            span 500 ₽
                     .cart__total-wrap.flex
                         .cart__total-left
                             p Итого:
                         .cart__total-price
                             p 10 500 ₽
-                            a(href="").js-open-promocode Есть промокод?
-                    .cart__promocode
-                        form(action="").form.flex
-                            .i-close.js-close-promocode
-                            .form__field
-                                input(type="text" name="promocode" required)
-                                .form__field-placeholder  Введите промокод
-                                .form__error Недопустимый формат
-                            button(type="submit").btn.btn-red Применить
+                    .cart__total-promo-success.flex.aic
+                        i.i-promo
+                        span Промокод применен
                 .checkout
                     .h1 Оформление заказа
                     form(action="" method="").form.checkout__form.js-form-checkout
