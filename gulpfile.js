@@ -7,9 +7,7 @@ let gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     pug = require('gulp-pug'),
     cleanCSS = require('gulp-clean-css'),
-    gcmq = require('gulp-group-css-media-queries'),
-    cssnano = require('gulp-cssnano'),
-    changed = require('gulp-changed');
+    gcmq = require('gulp-group-css-media-queries');
 
 
 
@@ -44,7 +42,6 @@ gulp.task('watch', function () {
 
 gulp.task('pug', function () {
     return gulp.src('./src/pug/*.pug')
-        .pipe(changed('public/', { extension: '.html' }))
         .pipe(pug({
             pretty: true
         }))
