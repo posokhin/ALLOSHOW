@@ -9,6 +9,11 @@
     }
     &__top{
         position: relative;
+        &:hover{
+            .event__slider-nav{
+                opacity: 1;
+            }
+        }
         &--default{
             img{
                 width: 100%;
@@ -183,6 +188,8 @@
             z-index: 2;
         }
         &-nav{
+            transition: .3s;
+            opacity: 0;
             margin: 180px 0 77px;
             display: flex;
             justify-content: space-between;
@@ -192,18 +199,17 @@
                 justify-content: center;
                 width: 40px;
                 height: 40px;
-                background-color:rgba(255, 255, 255, .3);
+                background-color:#ffffff;
                 border-radius: 50%;  
                 transition: .3s;   
                 cursor: pointer;
                 i{
                     transition: .3s; 
                     opacity: 0.6;  
-                    color: white;  
+                    color: #e30301;  
                 }
                 &:hover{
                     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  
-                    background-color: rgba(255, 255, 255, 0.5);
                     i{
                         opacity: 1;
                     }
