@@ -29,7 +29,7 @@
     "imask": "^5.2.1",
     "ion-rangeslider": "^2.3.0",
     "lg-video": "^1.2.2",
-    "swiper": "^5.0.4"
+    "swiper": "^6.5.1"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
